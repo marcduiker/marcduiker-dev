@@ -1,7 +1,7 @@
 export default defineAppConfig({
   alpine: {
-    title: 'Alpine',
-    description: 'The minimalist blog theme',
+    title: 'Marc Duiker - My place on the web',
+    description: 'I ❤️ Serverless, Event-Driven, DevCommunities, and Creative Coding.',
     image: {
       src: '/social-card-preview.png',
       alt: 'An image showcasing my project.',
@@ -26,12 +26,12 @@ export default defineAppConfig({
       message: 'Follow me on' // string that will be displayed in the footer (leave empty or delete to disable)
     },
     socials: {
-      twitter: 'nuxtlabs',
-      instagram: 'atinuxt',
+      twitter: 'marcduiker',
+      instagram: 'marcduiker',
       linkedin: {
         icon: 'uil:linkedin',
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/company/nuxtlabs'
+        href: 'https://www.linkedin.com/in/mduiker/'
       }
     },
     form: {
