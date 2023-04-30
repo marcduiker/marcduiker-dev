@@ -27,11 +27,22 @@ export default defineAppConfig({
     },
     socials: {
       twitter: 'marcduiker',
-      instagram: 'marcduiker',
+      github: 'marcduiker',
+      youtube: 'marcduiker',
       linkedin: {
         icon: 'uil:linkedin',
         label: 'LinkedIn',
         href: 'https://www.linkedin.com/in/mduiker/'
+      },
+      mastodon: {
+        icon: 'uil:comment',
+        label: 'Mastodon',
+        href: 'https://mstdn.social/@marcduiker'
+      },
+      devto: {
+        icon: 'uil:pen',
+        label: 'dev.to',
+        href: 'https://dev.to/marcduiker'
       }
     },
     form: {
