@@ -1,7 +1,12 @@
 export default defineNuxtConfig({
   extends: '@nuxt-themes/alpine',
   modules: [
-    '@nuxtjs/plausible'
+    '@nuxtjs/plausible',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        'Open+Sans': true,
+      }
+    }],
   ],
   plausible: {
     domain: 'marcduiker.dev'
@@ -10,5 +15,5 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/sitemap.xml']
     }
-  }
+  },
 })
