@@ -50,7 +50,6 @@ css({
     height: 'var(--social-icon-size)',
     display: 'flex',
     ':hover': {
-      // TODO: why prose links is not yellow, should be primary
       color: '{color.primary.500}',
     },
     svg: {
