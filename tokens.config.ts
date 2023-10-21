@@ -440,7 +440,7 @@ export default defineTheme({
         borderStyle: 'solid',
         borderColor: {
           initial: '{typography.color.secondary.200}',
-          dark: '{typography.color.secondary.800}'
+          dark: '{typography.color.secondary.600}'
         },
         borderRadius: '{typography.radii.3xs}',
         color: {
@@ -448,7 +448,7 @@ export default defineTheme({
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          initial: '{typography.color.secondary.50}',
+          initial: '',
           dark: '{typography.color.secondary.900}'
         },
         backdropFilter: {
@@ -465,12 +465,12 @@ export default defineTheme({
         fontSize: '{typography.fontSize.sm}',
         fontWeight: '{typography.fontWeight.normal}',
         color: {
-          initial: '{typography.color.secondary.700}',
-          dark: '{typography.color.secondary.200}'
+          initial: '{typography.color.secondary.900}',
+          dark: '{typography.color.secondary.50}'
         },
         backgroundColor: {
-          initial: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.700}'
+          initial: '{typography.color.secondary.50}',
+          dark: '{typography.color.secondary.600}'
         }
       }
     }
