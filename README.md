@@ -1,14 +1,6 @@
-# Alpine Starter
+# marcduiker.dev
 
-Starter template for [Alpine](https://alpine.nuxt.space).
-
-## Clone
-
-Clone the repository (using `nuxi`):
-
-```bash
-npx nuxi init -t themes/alpine
-```
+Source for my website [marcduiker.dev](https://marcduiker.dev).
 
 ## Setup
 
