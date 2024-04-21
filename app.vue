@@ -22,7 +22,7 @@
     font-variant-caps: all-small-caps;
   }
 
-  .card[data-v-136bb90e] {
+  .card[data-v-] {
     border: 3px solid var(--typography-color-primary-50);
   }
   </style>
