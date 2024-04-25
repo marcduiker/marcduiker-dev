@@ -11,9 +11,9 @@ export default defineAppConfig({
     header: {
       position: 'right', // possible value are : | 'left' | 'center' | 'right'
       logo: {
-        path: '/logo.svg', // path of the logo
-        pathDark: '/logo-dark.svg', // path of the logo in dark mode, leave this empty if you want to use the same logo
-        alt: 'alpine' // alt of the logo
+        path: '/marcduiker_name_anim.gif', // path of the logo
+        pathDark: '/marcduiker_name_anim.gif', // path of the logo in dark mode, leave this empty if you want to use the same logo
+        alt: 'Marc Duiker' // alt of the logo
       }
     },
     footer: {
