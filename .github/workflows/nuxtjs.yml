@@ -37,8 +37,8 @@ jobs:
           node-version: "20"
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - run: pnpm install
-      - run: pnpm nuxt build --preset github_pages
+      - run: npm install
+      - run: npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
