@@ -9,12 +9,12 @@
     "preview": "nuxi preview"
   },
   "devDependencies": {
-    "@nuxt-themes/alpine": "^1.5.0",
-    "@nuxthq/studio": "^2.0.3",
+    "@nuxt-themes/alpine": "^1.6.4",
+    "@nuxthq/studio": "^2.2.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/plausible": "^1.0.3",
     "consola": "^3.2.3",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.14.0",
     "pinceau": "^0.20.1",
     "sitemap": "^8.0.0"
   }
