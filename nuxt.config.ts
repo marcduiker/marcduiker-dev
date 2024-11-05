@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   extends: '@nuxt-themes/alpine',
+
   modules: [
     '@nuxtjs/plausible',
     ['@nuxtjs/google-fonts', {
@@ -8,13 +9,17 @@ export default defineNuxtConfig({
       }
     }],
   ],
+
   plausible: {
     domain: 'marcduiker.dev'
   },
+
   nitro: {
     prerender: {
       failOnError: false, 
       routes: ['/sitemap.xml']
     }
   },
+
+  compatibilityDate: '2024-11-04',
 })
