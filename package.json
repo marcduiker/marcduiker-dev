@@ -17,5 +17,8 @@
     "nuxt": "^3.14.0",
     "pinceau": "^0.20.1",
     "sitemap": "^8.0.0"
+  },
+  "dependencies": {
+    "pnpm": "^9.12.3"
   }
 }
