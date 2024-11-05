@@ -3,6 +3,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/plausible',
+    '@nuxthq/studio',
     ['@nuxtjs/google-fonts', {
       families: {
         'Open+Sans': true,
