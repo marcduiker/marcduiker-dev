@@ -19,6 +19,6 @@
     "sitemap": "^8.0.0"
   },
   "dependencies": {
-    "pnpm": "^9.12.3"
+    "pnpm": "^9.14.2"
   }
 }
