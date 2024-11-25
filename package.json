@@ -14,7 +14,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/plausible": "^1.0.3",
     "consola": "^3.2.3",
-    "nuxt": "^3.14.0",
+    "nuxt": "^3.14.1592",
     "pinceau": "^0.20.1",
     "sitemap": "^8.0.0"
   },
