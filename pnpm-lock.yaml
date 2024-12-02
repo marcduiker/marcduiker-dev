@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   pnpm:
-    specifier: ^9.12.3
-    version: 9.12.3
+    specifier: ^9.14.4
+    version: 9.14.4
 
 devDependencies:
   '@nuxt-themes/alpine':
@@ -4941,6 +4941,7 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    requiresBuild: true
     dev: true
 
   /js-tokens@9.0.0:
@@ -6473,8 +6474,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@9.12.3:
-    resolution: {integrity: sha512-zOD53pxafJW++UQWnMXf6HQav7FFB4wNUIuGgFaEiofIHmJiRstglny9f9KabAYu9z/4QNlrPIbECsks9KgT7g==}
+  /pnpm@9.14.4:
+    resolution: {integrity: sha512-yBgLP75OS8oCyUI0cXiWtVKXQKbLrfGfp4JUJwQD6i8n1OHUagig9WyJtj3I6/0+5TMm2nICc3lOYgD88NGEqw==}
     engines: {node: '>=18.12'}
     hasBin: true
     dev: false
