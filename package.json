@@ -12,7 +12,7 @@
     "@nuxt-themes/alpine": "^1.6.4",
     "@nuxthq/studio": "^2.2.1",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/plausible": "^1.0.3",
+    "@nuxtjs/plausible": "^1.2.0",
     "consola": "^3.2.3",
     "nuxt": "^3.14.0",
     "pinceau": "^0.20.1",
