@@ -1,0 +1,84 @@
+---
+layout: base
+permalink: /index.html
+title: 'Marc Duiker: I ❤️ OSS, Improving DevEx, Handcrafted Generative Art & Pixel Art'
+description: 'Welcome to the personal website of Marc Duiker, a creative technologist who enjoys helping people to achieve more every day.'
+blog:
+  title: 'Latest articles'
+sizes: '(max-width: 615px) 50vw, 100vw'
+widths: [400, 520]
+---
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-secondary)">
+    {% svg "divider/soft-top", null, "seperator" %}
+    <div class="section__inner flow region">
+      <h1 class="text-center text-base-light intro">{{ meta.siteDescription }}</h1>
+    </div>
+
+    {% svg "divider/soft-bottom", null, "seperator" %}
+  </header>
+
+  <section class="full | region">
+    <div class="wrapper flow prose">
+     <h2>Latest Generative Art</h2>
+      <div
+      class="feature grid region"
+      style="--region-space-top: var(--space-m); --region-space-bottom: var(--space-m); --gutter: var(--space-m) var(--space-xs)"
+    >
+      {% for ga in generativeart.slice(0, 3) %}
+        <custom-card img-square clickable style="--card-bg: var(--color-bg)">
+          {% image "./src/assets/images/generativeart/" + ga.filename, ga.name, null, "lazy", null, sizes, widths %}
+          <footer slot="footer">
+            <a href="{{ ga.link }}">
+              {{ ga.name }}
+            </a>
+          </footer>
+        </custom-card>
+      {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="full | region">
+    <div class="wrapper flow prose">
+     <h2>Latest Pixel Art</h2>
+      <div
+      class="feature grid region"
+      style="--region-space-top: var(--space-m); --region-space-bottom: var(--space-m); --gutter: var(--space-m) var(--space-xs)"
+    >
+      {% for px in pixelart.slice(0, 3) %}
+        <custom-card img-square style="--card-bg: var(--color-bg)">
+          {% image "./src/assets/images/pixelart/" + px.filename, px.name, null, "lazy", null, sizes, widths %}
+          <footer slot="footer">
+              {{ px.name }}
+            </p>
+          </footer>
+        </custom-card>
+      {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="full | region">
+    <div class="wrapper flow prose">
+      <h2>{{ blog.title }}</h2>
+      <!-- blog intro text is optional. -->
+
+      {# {% if blog.intro %}
+        <p>{{ blog.intro }}</p>
+      {% endif %} #}
+
+      <div class="feature |  region">
+        <custom-masonry layout="50-50">
+          <!-- loop posts -->
+          {% set itemList = collections.allPosts %}
+					{% asyncEach item in itemList.slice(0, 6) %}
+						{% set definedDate = item.date %}
+						{% include "partials/card-blog.njk" %}
+					{% endeach %}
+        </custom-masonry>
+      </div>
+    </div>
+  </section>
+</div>

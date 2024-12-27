@@ -1,13 +1,15 @@
-.pnpm-store
-node_modules
-*.iml
-.idea
-*.log*
-.nuxt
-.vscode
 .DS_Store
-coverage
+
+# Node modules
+node_modules
+
+# generated files
 dist
-sw.*
+src/_includes/css
+src/_includes/scripts
+
+# cache
+.cache
+
+# secret data
 .env
-.output

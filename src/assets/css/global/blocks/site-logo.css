@@ -1,0 +1,7 @@
+.logo {
+  --gutter: var(--space-xs);
+  padding: var(--space-s) 0;
+  font-size: var(--size-step-0);
+  text-decoration: none;
+  margin-top: -1.5em;
+}

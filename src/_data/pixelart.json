@@ -1,0 +1,47 @@
+[
+  {
+    "name": "DDOG logo",
+    "description": "Logo I created for the Dutch DevOps and GitHub group.",
+    "filename": "ddog.gif"
+  },
+  {
+    "name": "DevRelCon London logo",
+    "description": "Logo I created for DevRelCon London 2023.",
+    "filename": "devrelcon_london_2023.png"
+  },
+  {
+    "name": "Ferris",
+    "description": "Of one the many VSCode Pets I created.",
+    "filename": "ferris.gif"
+  },
+  {
+    "name": "Rubber duck",
+    "description": "Of one the many VSCode Pets I created.",
+    "filename": "rubber_duck.gif"
+  },
+  {
+    "name": "Python",
+    "description": "Of one the many VSCode Pets I created.",
+    "filename": "python.gif"
+  },
+  {
+    "name": "MVP Award",
+    "description": "Animation I craeted to celebrate receiving my MVP award in 2022.",
+    "filename": "MVP2022.gif"
+  },
+  {
+    "name": "A-team",
+    "description": "Silly 80s TV show with loads of shooting but no-one ever died.",
+    "filename": "A-team.gif"
+  },
+  {
+    "name": "Optimus & Megatron",
+    "description": "I just <3 80s cartoons!",
+    "filename": "optimus_megatron.png"
+  },
+  {
+    "name": "Star Wars",
+    "description": "Big fan of Star Wars!",
+    "filename": "starwars.gif"
+  }
+]
