@@ -5,5 +5,5 @@
  */
 .region {
   padding-block-start: var(--region-space-top, var(--space-l-xl));
-  padding-block-end: var(--region-space-bottom, var(--space-l-xl));
+  padding-block-end: var(--region-space-bottom, var(--space-m));
 }

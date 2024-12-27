@@ -50,6 +50,10 @@ h3 {
   font-size: var(--size-step-2);
 }
 
+h1.intro {
+  font-size: 1.5em;
+}
+
 /* Text formatting */
 p,
 li,
