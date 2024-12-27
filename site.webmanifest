@@ -1,0 +1,26 @@
+{
+  "name": "marcduiker.dev - I ❤️ OSS, Improving DevEx, Handcrafted Generative Art &amp; Pixel Art",
+  "short_name": "marcduiker.dev",
+  "start_url": "http://localhost:8080",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#DD4462",
+  "background_color": "#FBFBFB",
+  "display": "standalone"
+}

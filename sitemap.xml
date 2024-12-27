@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/the-importance-of-good-unit-tests-and-reviews/</loc>
+        <lastmod>2013-04-09T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/visual-studio-snippets-for-unit-test-methods/</loc>
+        <lastmod>2013-04-11T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/presentations-for-programmers/</loc>
+        <lastmod>2013-04-19T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/sitecore-introduction-for-developers/</loc>
+        <lastmod>2013-05-25T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/visual-studio-snippet-for-extension-methods/</loc>
+        <lastmod>2013-07-04T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/lazy-programmers-use-code-snippets/</loc>
+        <lastmod>2013-07-07T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/sitecore-mvp-summit-dev-podcasts-and-newsletter/</loc>
+        <lastmod>2013-11-11T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/sitecore-symposium-2014-keynote-session/</loc>
+        <lastmod>2014-09-23T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/sitecore-mvp-summit-cocktail-workshop/</loc>
+        <lastmod>2014-10-01T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/isolating-calls-to-sitecore-context-part-1/</loc>
+        <lastmod>2014-11-18T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/isolating-calls-to-sitecore-context-part-2/</loc>
+        <lastmod>2014-11-22T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/moving-my-blog-i-love-github-and-markdown/</loc>
+        <lastmod>2015-10-06T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/choosing-communication-tools-for-distributed-teams/</loc>
+        <lastmod>2015-10-14T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/ruling-the-continuous-integration-seas-with-sitecore-ship-part-1/</loc>
+        <lastmod>2015-10-21T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/ruling-the-continuous-integration-seas-with-sitecore-ship-part-2/</loc>
+        <lastmod>2015-10-31T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/sitecore-investigation-error-installing-item-bucket-package/</loc>
+        <lastmod>2016-04-28T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/workflow-management-spe-module/</loc>
+        <lastmod>2016-05-16T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/improving-unit-test-readability-named-args/</loc>
+        <lastmod>2016-06-01T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/blog-upgrade-excerpts-and-improving-performance/</loc>
+        <lastmod>2016-12-03T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/hands-on-with-sitecore-helix-using-powershell-add-module/</loc>
+        <lastmod>2016-12-28T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/hands-on-with-sitecore-helix-anatomy-add-helix-powershell-script/</loc>
+        <lastmod>2016-12-29T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/hands-on-with-sitecore-helix-setting-up-automated-build-packaging-continuous-delivery/</loc>
+        <lastmod>2017-01-03T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/hands-on-with-sitecore-helix-continuous-delivery-with-octopusdeploy/</loc>
+        <lastmod>2017-01-24T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/installing-python-azure-sdk-raspberrypi/</loc>
+        <lastmod>2017-07-16T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/serverless-architectures-using-azure-functions/</loc>
+        <lastmod>2017-10-19T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-azure-functions-stateful-orchestrations/</loc>
+        <lastmod>2017-11-05T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-azure-functions-stateful-orchestrations-part2/</loc>
+        <lastmod>2017-11-07T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-functions-youtube-part1/</loc>
+        <lastmod>2017-11-15T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azure-functions-grouping-functions-in-function-apps/</loc>
+        <lastmod>2017-11-21T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-functions-youtube-part2/</loc>
+        <lastmod>2017-12-01T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-functions-youtube-part3/</loc>
+        <lastmod>2018-03-06T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/the-anatomy-of-function-naming/</loc>
+        <lastmod>2018-06-21T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-functions-api-durableorchestrationclient-1/</loc>
+        <lastmod>2019-01-07T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-functions-api-durableorchestrationclient-2/</loc>
+        <lastmod>2019-02-10T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/creating-azure-functions-updates-twitterbot/</loc>
+        <lastmod>2019-03-03T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-functions-api-purge-terminate/</loc>
+        <lastmod>2019-08-12T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/my-learnings-from-running-the-azure-functions-updates-twitterbot-for-half-a-year/</loc>
+        <lastmod>2019-09-05T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/durable-functions-api-durableorchestrationclient-4/</loc>
+        <lastmod>2020-03-15T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/streaming-for-serverlessdays/</loc>
+        <lastmod>2020-04-08T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/serverlessdays-amsterdam-post-mortem/</loc>
+        <lastmod>2020-05-12T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/msbuild-serverless-community-creativity/</loc>
+        <lastmod>2020-05-22T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/writing-safe-orchestrations/</loc>
+        <lastmod>2020-09-16T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-http-lesson-dotnet/</loc>
+        <lastmod>2020-10-28T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-blob-lesson-dotnet/</loc>
+        <lastmod>2020-11-11T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/creative-coding/</loc>
+        <lastmod>2020-11-23T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-queue-lesson-dotnet/</loc>
+        <lastmod>2020-11-27T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-deployment-lesson-dotnet/</loc>
+        <lastmod>2020-12-20T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-table-lesson-dotnet/</loc>
+        <lastmod>2021-01-17T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-cosmosdb-lesson-dotnet/</loc>
+        <lastmod>2021-02-07T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-durablefunctions-lesson-typescript/</loc>
+        <lastmod>2021-02-14T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-configuration-lesson-dotnet/</loc>
+        <lastmod>2021-03-28T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-http-lesson-typescript/</loc>
+        <lastmod>2021-04-15T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azure-functions-university/</loc>
+        <lastmod>2021-04-27T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-http-lesson-powershell/</loc>
+        <lastmod>2021-05-08T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-lesson-tips/</loc>
+        <lastmod>2021-05-19T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-blob-lesson-typescript/</loc>
+        <lastmod>2021-09-03T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-http-lesson-powershell-portal/</loc>
+        <lastmod>2021-10-24T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-http-lesson-python/</loc>
+        <lastmod>2021-12-10T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-http-lesson-dotnet6/</loc>
+        <lastmod>2022-01-03T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-callingrestapis-lesson-dotnet6/</loc>
+        <lastmod>2022-02-13T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-durablefunctions-advanced-lesson-typescript/</loc>
+        <lastmod>2022-02-25T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azfuncuni-deployment-lesson-dotnet6/</loc>
+        <lastmod>2022-03-15T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/one-year-at-ably-as-developer-advocate/</loc>
+        <lastmod>2022-11-02T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaker-buddy/</loc>
+        <lastmod>2022-11-24T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/cloud-native-weekly-ep5/</loc>
+        <lastmod>2023-07-06T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/live-stream-gregor-suttie/</loc>
+        <lastmod>2023-07-18T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/devrelcon-london-2023/</loc>
+        <lastmod>2023-09-14T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-tweakers-dev-summit/</loc>
+        <lastmod>2023-09-17T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/mc-ingmsbuild/</loc>
+        <lastmod>2023-10-01T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/dotnetfriday-dapr-workflow/</loc>
+        <lastmod>2023-10-02T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/sponsoring-techorama-nl-2023/</loc>
+        <lastmod>2023-10-11T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/4cee-meetup-dapr/</loc>
+        <lastmod>2023-10-12T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/devopsdays-creative-coding/</loc>
+        <lastmod>2023-10-12T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-ndcporto-2023/</loc>
+        <lastmod>2023-10-20T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-swetugg-goteborg-2023/</loc>
+        <lastmod>2023-10-27T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-buildstuff-2023/</loc>
+        <lastmod>2023-11-18T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-cloudbrew-2023/</loc>
+        <lastmod>2023-12-09T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/festive-tech-calendar-2023/</loc>
+        <lastmod>2023-12-20T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/azure-community-enthusiasts-5-feb/</loc>
+        <lastmod>2024-02-05T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-swetugg-stockholm-2024/</loc>
+        <lastmod>2024-02-07T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/dapr-day-2024/</loc>
+        <lastmod>2024-02-21T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/kubecon-paris-2024/</loc>
+        <lastmod>2024-03-23T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/dapr-game/</loc>
+        <lastmod>2024-03-24T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-futuretech-2024/</loc>
+        <lastmod>2024-04-17T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-dotnet2024/</loc>
+        <lastmod>2024-06-25T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/mcing-at-azure-lowlands-2024/</loc>
+        <lastmod>2024-06-27T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-cphdevfest-2024/</loc>
+        <lastmod>2024-08-29T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/speaking-at-containerdays-2024/</loc>
+        <lastmod>2024-09-08T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/sponsoring-techorama-nl-2024/</loc>
+        <lastmod>2024-10-08T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/tags/unit tests/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/tags/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/about/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/articles/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/generative-art/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/imprint/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/pixelart/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/privacy/</loc>
+        <lastmod>2024-12-27T15:55:01.591Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+</urlset>
