@@ -42,8 +42,9 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   --color-tertiary: var(--color-tertiary-highlight);
   /* Fallbacks if modern color syntax not supported */
   --color-text-accent: #505050;
-  --color-bg-accent: #fdfdfd;
+  --color-bg-accent: var(--color-tertiary-highlight);
   --color-bg-accent-2: #f7f7f7;
+  --card-bg: var(--color-bg-accent);
 }
 
 /* Dark theme specific variables based on system preference */
@@ -57,8 +58,9 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
     --color-tertiary: var(--color-tertiary-highlight);
     /* Fallbacks if modern color syntax not supported */
     --color-text-accent: #a8a8a8;
-    --color-bg-accent: #383838;
-    --color-bg-accent-2: #404040;
+    --color-bg-accent: var(--color-tertiary-highlight);
+    --color-bg-accent-2: #808080;
+    --card-bg: var(--color-bg-accent);
   }
 }
 
@@ -72,8 +74,9 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   --color-tertiary: var(--color-tertiary-highlight);
   /* Fallbacks if modern color syntax not supported */
   --color-text-accent: #a8a8a8;
-  --color-bg-accent: #383838;
+  --color-bg-accent: var(--color-tertiary-highlight);
   --color-bg-accent-2: #404040;
+  --card-bg: var(--color-bg-accent);
 }
 
 /* Enhancements for browsers that support color-mix */
@@ -81,7 +84,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   :root,
   :root[data-theme='light'] {
     --color-text-accent: color-mix(in oklab, var(--color-base-dark) 80%, var(--color-bg));
-    --color-bg-accent: color-mix(in oklab, var(--color-bg) 90%, var(--color-text));
+    --color-bg-accent: color-mix(in oklab, var(--color-tertiary-highlight) 90%, var(--color-text));
     --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 70%, var(--color-text));
     --color-primary-sub-20: color-mix(in oklab, var(--color-primary-highlight), var(--color-bg) 20%);
     --color-secondary-sub-20: color-mix(in oklab, var(--color-secondary-highlight), var(--color-bg) 20%);
@@ -91,7 +94,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   @media (prefers-color-scheme: dark) {
     :root {
       --color-text-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--color-bg));
-      --color-bg-accent: color-mix(in oklab, var(--color-bg) 92%, var(--color-text));
+      --color-bg-accent: color-mix(in oklab, var(--color-tertiary-highlight) 92%, var(--color-text));
       --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 80%, var(--color-text));
       /* add opacity with color-mix */
       --color-primary: var(--color-primary-sub-20);
@@ -102,7 +105,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
 
   :root[data-theme='dark'] {
     --color-text-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--color-bg));
-    --color-bg-accent: color-mix(in oklab, var(--color-bg) 92%, var(--color-text));
+    --color-bg-accent: color-mix(in oklab, var(--color-tertiary-highlight) 92%, var(--color-text));
     --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 80%, var(--color-text));
     /* add opacity with color-mix */
     --color-primary: var(--color-primary-sub-20);
