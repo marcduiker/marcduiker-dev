@@ -1,10 +1,10 @@
 ## Licenses
 
-This project is licensed under the ISC License. Additionally, it includes components that are licensed under the MIT and SIL License.
+This project is licensed under the ISC License. 
 
 ### ISC License
 
-Copyright (c) 2024 Lene Saile
+Copyright (c) 2024 Marc Duiker
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
@@ -34,15 +34,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-### SIL OPEN FONT LICENSE
-
-The Fonts **Red Hat Display** and **Inclusive Sans** are licensed under the SIL License, Version 1.1.
-
-Copyright (c) 2021 Red Hat, Inc. and 2024 (c) Olivia King.
-
-This license allows
-
-- Commercial use
-- Modifying
-- Redistribution
-- Full license: https://openfontlicense.org/

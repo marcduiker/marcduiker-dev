@@ -1,10 +1,10 @@
 ---
-fontDisplay: "'Red Hat Display', Ubuntu" # needed created in local development, font must be installed on your system.
-fontBody: "'Inclusive Sans', Ubuntu" # needed created in local development, font must be installed on your system.
+fontDisplay: "'Rockwell', Ubuntu" # needed created in local development, font must be installed on your system.
+fontBody: "'Verdana', Ubuntu" # needed created in local development, font must be installed on your system.
 background: '#343434'
 text: '#FBFBFB'
-colors: ['#dd4462', '#c73d58', '#b1364e', '#9a3044']
-siteUrl: 'eleventy-excellent.netlify.app'
+colors: ['#0095e9', '#124e89', '#f77622', '#feae34']
+siteUrl: 'marcduiker.dev'
 pagination:
   data: collections.posts
   size: 1
@@ -61,7 +61,7 @@ eleventyExcludeFromCollections: true
   <!-- date -->
   <text
     font-family="{{ fontBody }}, sans-serif"
-    font-size="24"
+    font-size="36"
     font-weight="900"
     fill="{{ text }}"
     letter-spacing="-1"
@@ -75,7 +75,7 @@ eleventyExcludeFromCollections: true
   <text
     id="text"
     font-family="{{ fontDisplay }}, sans-serif"
-    font-size="80"
+    font-size="65"
     font-weight="900"
     fill="{{ text }}"
     letter-spacing="-3"
@@ -88,12 +88,12 @@ eleventyExcludeFromCollections: true
   <!-- sitename / url -->
   <text
     font-family="{{ fontBody }}, sans-serif"
-    font-size="24"
+    font-size="36"
     font-weight="500"
     fill="{{ text }}"
     letter-spacing="-0.5"
   >
     <!-- <tspan x="160" y="580">{{ meta.siteName }} · {{ meta.url | replace("https://", "") | replace("http://", "") }}</tspan> -->
-    <tspan x="160" y="580">{{ meta.siteName }} — {{ siteUrl }}</tspan>
+    <tspan x="160" y="580">{{ meta.siteName }}</tspan>
   </text>
 </svg>
