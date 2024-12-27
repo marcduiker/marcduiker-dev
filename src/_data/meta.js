@@ -1,6 +1,6 @@
 export const url = process.env.URL || 'http://localhost:8080';
 export const siteName = 'marcduiker.dev';
-export const siteDescription = 'I ❤️ OSS, Improving DevEx, Handcrafted Generative Art & Pixel Art';
+export const siteDescription = 'I ❤️ OSS, Improving Developer Experiences, Drawing Pixel Art, and Hand-crafting Generative Art';
 export const siteType = 'Person'; // schema
 export const locale = 'en_EN';
 export const lang = 'en';
