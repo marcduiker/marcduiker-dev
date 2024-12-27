@@ -20,11 +20,11 @@ export const themeColor = '#DD4462'; //  Manifest: defines the default theme col
 export const themeBgColor = '#FBFBFB'; // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
 export const opengraph_default_alt =
-  "I ❤️ OSS, Improving DevEx, Handcrafted Generative Art & Pixel Art"; // alt text for default meta image"
+  "I ❤️ OSS, Improving Developer Experiences, Drawing Pixel Art, and Hand-crafting Generative Art"; // alt text for default meta image"
 export const blog = {
   // RSS feed
   name: 'Articles by Marc Duiker',
-  description: 'I ❤️ OSS, Improving DevEx, Handcrafted Generative Art & Pixel Art',
+  description: 'I ❤️ OSS, Improving Developer Experiences, Drawing Pixel Art, and Hand-crafting Generative Art',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     {
