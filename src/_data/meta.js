@@ -23,7 +23,7 @@ export const opengraph_default_alt =
   "I ❤️ OSS, Improving DevEx, Handcrafted Generative Art & Pixel Art"; // alt text for default meta image"
 export const blog = {
   // RSS feed
-  name: 'My Articles',
+  name: 'Articles by Marc Duiker',
   description: 'I ❤️ OSS, Improving DevEx, Handcrafted Generative Art & Pixel Art',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
