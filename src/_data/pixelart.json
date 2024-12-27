@@ -1,13 +1,19 @@
 [
+ 
   {
-    "name": "DDOG logo",
-    "description": "Logo I created for the Dutch DevOps and GitHub group.",
-    "filename": "ddog.gif"
+    "name": "Take care of your shelf",
+    "description": "Personal project",
+    "filename": "take-care-of-your-shelf-square-x2.gif"
   },
   {
     "name": "DevRelCon London logo",
     "description": "Logo I created for DevRelCon London 2023.",
     "filename": "devrelcon_london_2023.png"
+  },
+  {
+    "name": "DDOG logo",
+    "description": "Logo I created for the Dutch DevOps and GitHub group.",
+    "filename": "ddog.gif"
   },
   {
     "name": "Ferris",
