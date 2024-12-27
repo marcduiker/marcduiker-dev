@@ -1,0 +1,60 @@
+---
+title: Pixel Art & Games
+permalink: /pixelart/index.html
+description: 'Pixel art and retro games by Marc Duiker.'
+layout: page
+sizes: '(max-width: 615px) 50vw, 100vw'
+widths: [400, 520]
+---
+
+<article class="full  section" style="--spot-color: var(--color-bg-accent)">
+  {% svg "divider/soft-top", null, "seperator" %}
+
+  <section class="feature section__inner wrapper">
+    <h2>Pixel art</h2>
+    <div
+      class="feature grid region"
+      style="--region-space-top: var(--space-xl); --gutter: var(--space-xl) var(--space-xs)"
+    >
+      <!-- you find tha data for that in src/_data/pixelart.json -->
+      {% for art in pixelart %}
+        <custom-card img-square class="text-step-min-1" style="--card-bg: var(--color-bg)">
+          {% image "./src/assets/images/pixelart/" + art.filename, art.name, null, "lazy", null, sizes, widths %}
+          <h3 class="text-step-0" slot="headline">{{ art.name }}</h3>
+
+          <p slot="content">{{ art.description }}</p>
+          <footer slot="footer" class="repel">
+            <a class="no-indicator" href="{{ art.link }}">{{ art.link | replace("https://", "") }}</a>
+          </footer>
+        </custom-card>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% svg "divider/soft-bottom", null, "seperator" %}
+</article>
+
+<h2>Games</h2>
+
+<p>
+  Some years ago I got interested in Pico8, a fantasy game console for making, sharing, and playing retro games. I made a small game around Azure Functions, which you can play below. I really enjoyed making this game, but it was also a lot of work. I started just doing pixel art with Pico8 and later changed to Aseprite, which is a great tool dedicated for making pixel art.
+</p>
+
+<iframe src="https://itch.io/embed/542859" width="552" height="167" frameborder="0"><a href="https://marcduiker.itch.io/azure-functions-the-game">Azure Functions, The Game by marcduiker</a></iframe>
+
+<p>
+  Every now and then I still enjoy making a small retro game, such as my announcement to join Diagrid as a Sr Developer Advocate, but most of the time I stick with drawing pixel art, either for my own enjoyment, or when people commission me to design a logo, or draw their online avatar.
+</p>
+
+<iframe height="167" frameborder="0" src="https://itch.io/embed/1859023" width="552"><a href="https://marcduiker.itch.io/joining-diagrid">Joining Diagrid by marcduiker</a></iframe>
+
+<p>
+  For KubeCon Paris 2024, I made a Dapr inspired retro game that people played at the Diagrid sponsor booth. The player needs to avoid rogue messages, collect Dapr coins and the Dapr hat, in order to get to the development team and share their Dapr knowledge. The game has an educational element because after a level is completed some Dapr information is shared with the player. The game was very popular at the conference, see the KubeCon Paris blog post.
+</p>
+
+<iframe frameborder="0" src="https://itch.io/embed/2163754" width="552" height="167"><a href="https://marcduiker.itch.io/dapr-game">The Dapr Game by marcduiker</a></iframe>
+
+
+{% css "inline" %}
+  {% include "css/custom-card.css" %}
+{% endcss %}

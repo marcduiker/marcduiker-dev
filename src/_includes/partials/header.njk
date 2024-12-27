@@ -1,0 +1,11 @@
+<header class="wrapper">
+  <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
+
+  <div class="site-header | repel ontop">
+    <a href="/" class="logo | cluster" {% if page.url == "/" %}aria-current="page"{% endif %}>
+      {% image "./src/assets/images/main/marcduiker_name_anim.gif", "Marc Duiker", null, "lazy", null, '100vw', [207] %}
+      {# <span class="font-display">{{ meta.siteName }}</span> #}
+    </a>
+    {% include "partials/main-nav.njk" %}
+  </div>
+</header>
