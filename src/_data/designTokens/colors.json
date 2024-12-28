@@ -21,6 +21,10 @@
     {
       "name": "Tertiary Highlight",
       "value": "#fee761"
+    },
+    {
+      "name": "Dark Highlight",
+      "value": "#124e89"
     }
   ]
 }

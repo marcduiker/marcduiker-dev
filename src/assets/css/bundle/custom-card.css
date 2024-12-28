@@ -16,7 +16,7 @@ custom-card > :empty {
 }
 
 custom-card ::selection {
-  color: var(--color-dark);
+  color: var(--color-text);
   background-color: var(--color-secondary);
 }
 
@@ -24,7 +24,7 @@ custom-card :is(h2, h3) {
   --flow-space: var(--space-m);
   grid-row: headline;
   font-size: var(--size-step-2);
-  color: var(--color-dark);
+  color: var(--color-text);
 }
 
 custom-card :is(h2, h3) a {
@@ -47,7 +47,7 @@ custom-card img {
 custom-card > .meta {
   grid-row: meta;
   font-size: var(--size-step-min-1);
-  color: var(--color-dark);
+  color: var(--color-text);
 }
 
 custom-card > p {

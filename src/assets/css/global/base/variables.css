@@ -58,11 +58,12 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
     --color-tertiary: var(--color-tertiary-highlight);
     /* Fallbacks if modern color syntax not supported */
     --color-text-accent: #a8a8a8;
-    --color-bg-accent: var(--color-tertiary-highlight);
+    --color-bg-accent: #124e89;
     --color-bg-accent-2: #808080;
     --card-bg: var(--color-bg-accent);
   }
 }
+
 
 /* Dark theme specific variables based on manual override */
 :root[data-theme='dark'] {
@@ -74,7 +75,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   --color-tertiary: var(--color-tertiary-highlight);
   /* Fallbacks if modern color syntax not supported */
   --color-text-accent: #a8a8a8;
-  --color-bg-accent: var(--color-tertiary-highlight);
+  --color-bg-accent: #124e89;
   --color-bg-accent-2: #404040;
   --card-bg: var(--color-bg-accent);
 }
@@ -94,7 +95,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   @media (prefers-color-scheme: dark) {
     :root {
       --color-text-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--color-bg));
-      --color-bg-accent: color-mix(in oklab, var(--color-tertiary-highlight) 92%, var(--color-text));
+      --color-bg-accent: color-mix(in oklab, #124e89 92%, var(--color-text));
       --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 80%, var(--color-text));
       /* add opacity with color-mix */
       --color-primary: var(--color-primary-sub-20);
@@ -105,7 +106,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
 
   :root[data-theme='dark'] {
     --color-text-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--color-bg));
-    --color-bg-accent: color-mix(in oklab, var(--color-tertiary-highlight) 92%, var(--color-text));
+    --color-bg-accent: color-mix(in oklab, #124e89 92%, var(--color-text));
     --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 80%, var(--color-text));
     /* add opacity with color-mix */
     --color-primary: var(--color-primary-sub-20);
