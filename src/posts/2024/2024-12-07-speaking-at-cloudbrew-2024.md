@@ -29,7 +29,7 @@ For my session, I tried a new approach: I used [DemoTime,](https://marketplace.v
 
 This is the [repo with the demos](https://github.com/diagrid-labs/dapr-resiliency-and-durable-execution). It comes with a devcontainer configuration so you can run it yourself easily, either on GitHub Codespaces or locally.
 
-I had a lovely time at CloudBrew again this year. I like the cozy scale of ththis conference, and it's clear the organizers have been doing this for many years. I had good conversations with Dapr enthusiasts (I hope to welcome you on the [Dapr Discord](https://bit.ly/dapr-discord)!) and it was great meeting with other speakers and the organizers again. Until next time!
+I had a lovely time at CloudBrew again this year. I like the cozy scale of this conference, and it's clear the organizers have been doing this for many years. I had good conversations with Dapr enthusiasts (I hope to welcome you on the [Dapr Discord](https://bit.ly/dapr-discord)!) and it was great meeting with other speakers and the organizers again. Until next time!
 
 ---
 Do you like Dapr and want to show your support? Claim this [community supporter Holopin badge](https://bit.ly/dapr-supporter)!
