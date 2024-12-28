@@ -1,21 +1,32 @@
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'Roboto';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
+  font-kerning: 10;
   src:
     local(''),
-    url('/assets/fonts/Verdana.woff2') format('woff2');
+    url('/assets/fonts/roboto-regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'Roboto';
   font-style: italic;
   font-display: swap;
   font-weight: 400;
   src:
     local(''),
-    url('/assets/fonts/Verdana.woff2') format('woff2');
+    url('/assets/fonts/roboto-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: bold;
+  font-display: swap;
+  font-weight: 600;
+  src:
+    local(''),
+    url('/assets/fonts/roboto-bold.woff2') format('woff2');
 }
 
 @font-face {

@@ -56,7 +56,7 @@ custom-card > p {
 
 custom-card > footer {
   grid-row: footer;
-  font-size: var(--size-step-min-2);
+  font-size: var(--size-step-min-1);
 }
 
 /* avoid overflow of long words */

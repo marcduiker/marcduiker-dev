@@ -14,14 +14,14 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-base);
-  font-size: var(--size-step-min-1);
+  font-size: var(--size-step-0);
   font-weight: var(--font-regular);
   font-size-adjust: from-font;
   line-height: var(--leading-standard);
   color: var(--color-text);
   background-color: var(--color-bg);
   accent-color: var(--color-primary);
-  letter-spacing: var(--tracking);
+  letter-spacing: var(--tracking-m);
 }
 
 main {
