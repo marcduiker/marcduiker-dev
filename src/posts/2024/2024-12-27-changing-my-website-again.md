@@ -12,7 +12,7 @@ I was pretty happy with my Nuxt setup, I understand just enough Vue to be able t
 
 The front-end world moves quickly though, and I added a Dependabot configuration to create PRs with npm package updates to stay up to date. Most of the time this worked well, until there were some breaking changes... and I couldn't easily figure out how to fix it 😭.
 
-I do think updating dependencies in general is a good thing, keeping everything secure and preventing software rot. But this breaking change was something I couldn't fix, and I got __so frustrated__ by the whole thing. To be fair, I don't think this is an issue with Nuxt. I was too eager updating something I didn't fully understand the impact of. I think all static site generator ecosystems suffer from this. And while updating dependencies is important, __if it isn't broken, don't try to 'fix' it__.
+I do think updating dependencies in general is a good thing, keeping everything secure and preventing software rot. But this breaking change was something I couldn't fix, and I got __so frustrated__ by the whole thing. To be fair, I don't think this is an issue with Nuxt. I was too eager updating something I didn't fully understand the impact of. I think all static site generator themes/templates suffer from this. And while updating dependencies is important, __if it isn't broken, don't try to 'fix' it__.
 
 So instead of fixing my Nuxt setup, I decided to start over with a new tech stack... again.
 
@@ -41,10 +41,8 @@ The next generator on the list to try was Eleventy. I found a great template by 
 
 One of the features I like a lot in this template is _image optimization_, this was something I didn't have in my Nuxt setup. This also proved to be a bit of a challenge while migrating, since this Eleventy template was not configured to handle animated gifs, and this is something I use __a lot__ to show my pixel art and UI animations in blog posts. Lene was very helpful and made a couple of updates to the template. Thanks Lene! 🙏
 
-The other big change I had to do was some 'content massaging' for the blog posts. Since I want to URLs to stay the same, I had to add _permalinks_ to all my blog posts. I did this manually for 90 posts, but I could have automated this with a script. Also the image links had to be updated to use the new image optimization feature. 
+The other big change I had to do was some 'content massaging' for the blog posts. Since I wanted the URLs to stay the same, I had to add _permalinks_ to all my blog posts. I did this manually for 90 posts, but I could have automated this with a script. Also, the image links had to be updated to use the new image optimization feature.
 
 I spent quite some hours on migrating the posts. It all seems to be in a good state now, and I'm already writing new posts without being frustrated! 🎉
 
 I wonder how long this setup will last... 🤔
-
-
