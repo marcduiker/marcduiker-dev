@@ -12,7 +12,7 @@ I was pretty happy with my Nuxt setup, I understand just enough Vue to be able t
 
 The front-end world moves quickly though, and I added a Dependabot configuration to create PRs with npm package updates to stay up to date. Most of the time this worked well, until there were some breaking changes... and I couldn't easily figure out how to fix it 😭.
 
-I do think updating dependencies in general is a good thing, keeping everything secure and preventing software rot. But this breaking change was something I couldn't fix, and I got __so frustrated__ by the whole thing. To be fair, I don't think this is an issue with Nuxt. I was too eager updating something I didn't fully understand the impact of. I think all static site generator themes/templates suffer from this. And while updating dependencies is important, __if it isn't broken, don't try to 'fix' it__.
+I do think updating dependencies in general is a good thing, keeping everything secure and preventing software rot. But this breaking change was something I couldn't fix, and I got __so frustrated__ by the whole thing. To be fair, this isn't an issue with Nuxt. I chose a theme that was not so popular, received very little updates, and therefore got out of sync with Nuxt itself. I was too eager updating something I didn't fully understand the impact of. I think all static site generator themes/templates suffer from this. And while updating dependencies is important, __if it isn't broken, don't try to 'fix' it__.
 
 So instead of fixing my Nuxt setup, I decided to start over with a new tech stack... again.
 
