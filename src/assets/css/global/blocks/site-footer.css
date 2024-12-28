@@ -21,10 +21,10 @@
 
 .site-footer .creator {
   font-size: var(--size-step-min-1);
-  font-style: italic;
+  font-family: var(--font-display);
   margin-block-start: var(--space-l);
-  display: grid;
-  place-items: center;
+  display: block;
+  text-align: center;
 }
 
 .site-footer .creator a {
