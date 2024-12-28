@@ -95,7 +95,7 @@ svg {
 b,
 strong {
   font-weight: var(--font-extra-bold);
-  font-family: var(--font-display);
+  font-family: var(--font-base);
 }
 
 /* Horizontal rule */
