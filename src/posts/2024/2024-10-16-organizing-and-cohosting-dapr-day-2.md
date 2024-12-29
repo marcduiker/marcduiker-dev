@@ -26,7 +26,7 @@ After the final speaker selection was made, I sent out invites to the speakers w
 
 For about a year now, I've been alternating the hosting of the Dapr Community Calls with [Cecil Phillip](https://bsky.app/profile/cecilphillip.bsky.social), who is one of the Dapr Community Managers. Cecil is a great host, and has a lot of experience with live streaming, so I asked him to co-host Dapr Day with me. Together with Annu Singh, another Dapr community manager (mostly working behind the scenes) we brain-stormed how we can make event engaging and fun for the attendees. We took some successful ingredients from the Dapr Day that we organized in April 2024 and expanded on that.
 
-Aside from some initial audio feedback loop issues, the co-hosting for the event went very well. I really enjoyed doing a Kahoot quiz where we asked the audience questions about the history of the Dapr project. The tricky thing with live streaming and interacting with the audience is the delay. We were using Restream to stream to the CNCF YouTube channel and the delay was around 25 seconds. I amde sure the Kahoot answering time was long enough to compensate for this delay.
+Aside from some initial audio feedback loop issues, the co-hosting for the event went very well. I really enjoyed doing a Kahoot quiz where we asked the audience questions about the history of the Dapr project. The tricky thing with live streaming and interacting with the audience is the delay. We were using Restream to stream to the CNCF YouTube channel and the delay was around 25 seconds. I made sure the Kahoot answering time was long enough to compensate for this delay.
 
 Thanks to all the speakers, the program committee, the CNCF, and the Dapr community for making this event a success! 🙏
 
