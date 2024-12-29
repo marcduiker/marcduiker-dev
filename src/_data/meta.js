@@ -1,4 +1,4 @@
-export const url = process.env.URL || 'http://localhost:8080';
+export const url = process.env.URL || 'https://marcduiker.dev';
 export const siteName = 'marcduiker.dev';
 export const siteDescription = 'I ❤️ OSS, Improving Developer Experience, Drawing Pixel Art, and Handcrafting Generative Art';
 export const siteType = 'Person'; // schema
@@ -13,12 +13,14 @@ export const author = {
   bluesky: '@marcduiker.dev'
 };
 export const creator = {
-  name: 'Marc Duiker'
+  name: 'Marc Duiker',
+  website: 'https://marcduiker.dev',
+  social: 'https://bsky.app/profile/marcduiker.dev'
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
 export const themeColor = '#DD4462'; //  Manifest: defines the default theme color for the application
 export const themeBgColor = '#FBFBFB'; // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
-export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
+export const opengraph_default = '/assets/images/main/marcduiker.dev.og.png'; // fallback/default meta image
 export const opengraph_default_alt =
   "I ❤️ OSS, Improving Developer Experience, Drawing Pixel Art, and Handcrafting Generative Art"; // alt text for default meta image"
 export const blog = {
