@@ -6,11 +6,13 @@ date: 2024-12-27
 
 It seems that every couple of years, I change my website, not just the design, but nearly the complete tech stack 😬. In 2016, I moved to Jekyll, in 2021, I chose [Nuxt](https://nuxt.com/), and now, at the end of 2024, I've moved it all to [Eleventy](https://www.11ty.dev/).
 
+> TLDR: When looking at a new static site generator, look at the starter kits/themes/templates, and check if they are actively maintained. It doesn't really matter which generator you choose, but a good starter kit with proper docs and community support can save you a lot of headache. Also check what content migration steps are required (for example permalinks & images).
+
 ## If it isn't broken, don't try to fix it
 
-I was pretty happy with my Nuxt setup, I understand just enough Vue to be able to update the layouts to my needs, and I wrote all my content in Markdown, as I love to do. Blogging life was good.
+I was pretty happy with my Nuxt setup that I used for the last 3.5 years. I understand just enough Vue to be able to update the layouts to my needs, and I wrote all my content in Markdown, as I love to do. Blogging life was good.
 
-The front-end world moves quickly though, and I added a Dependabot configuration to create PRs with npm package updates to stay up to date. Most of the time this worked well, until there were some breaking changes... and I couldn't easily figure out how to fix it 😭.
+The front-end world moves quickly though, and I added a Dependabot configuration to create PRs to handle all the npm package updates. Most of the time this worked well, until there were some breaking changes... and I couldn't easily figure out how to fix it 😭. I also didn't want to roll back since some packages contained vulnerabilities.
 
 I do think updating dependencies in general is a good thing, keeping everything secure and preventing software rot. But this breaking change was something I couldn't fix, and I got __so frustrated__ by the whole thing. To be fair, this isn't an issue with Nuxt. I chose a theme that was not so popular, received very little updates, and therefore got out of sync with Nuxt itself. I was too eager updating something I didn't fully understand the impact of. I think all static site generator themes/templates suffer from this. And while updating dependencies is important, __if it isn't broken, don't try to 'fix' it__.
 
@@ -22,16 +24,16 @@ I really like static site generators! They are fast, deploying is relatively eas
 
 There are a ton of static site generators out there. If you're looking for one, I recommend looking at [jamstack.org/generators/](https://jamstack.org/generators/).
 
-I have experience with Jekyll, Hugo, Nuxt, and now I wanted to try something new because I like to learn new things 😁 (and apparently I'm a static site generator masochist 😣).
+I have experience with Jekyll, Hugo, Nuxt, and now I wanted to try something new because I like to learn new things 😁 (and apparently I'm a _static site generator masochist_ 🫠).
 
 These are my criteria for choosing a static site generator:
 
 - Flexible but doesn't require a PhD in computer science to change/extend it.
 - Actively maintained project (incl the themes/templates!).
-- Enough themes/templates available to start with and update it to my needs.
+- Enough starter kits/themes/templates available to start with and update it to my needs.
 - Good documentation.
 
-I heard good things about Astro and Eleventy recently. I looked at some templates from both projects and liked the [AstroWind theme](https://astro.build/themes/details/astrowind/) a lot, so I gave that a try. I started to migrate my blog posts but somewhere I got stuck and the site didn't render at all 🫤. This is definitely a 'me problem', not an Astro problem. But since I couldn't easily figure out what the issue was, I decided to move away from Astro.
+I heard good things about Astro and Eleventy recently. I looked at some templates from both projects and liked the [AstroWind theme](https://astro.build/themes/details/astrowind/) a lot, so I gave that a try. I started to migrate my blog posts, but somewhere I got stuck, and the site didn't render at all 🫤. This is definitely a 'me problem', not an Astro problem. But since I couldn't easily figure out what the issue was, I decided to move away from Astro.
 
 > In general, I think a lot of static site generators can benefit from better error messages. I often found those messages to generic to be helpful. If something is wrong with a blog post I wrote, then please let me know which front-matter field is missing or incorrect!
 
