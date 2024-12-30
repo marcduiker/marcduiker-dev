@@ -65,7 +65,7 @@ blockquote:not([class]) {
 blockquote {
   padding: var(--space-m-l);
   border-inline-start: 0.5rem solid var(--color-primary);
-  font-size: var(--size-step-2);
+  font-size: var(--size-step-1);
 }
 
 blockquote > * + * {
@@ -74,7 +74,7 @@ blockquote > * + * {
 
 blockquote :last-child {
   font-family: var(--font-base);
-  font-style: normal;
+  font-style: italic;
   font-size: var(--size-step-1);
 }
 
