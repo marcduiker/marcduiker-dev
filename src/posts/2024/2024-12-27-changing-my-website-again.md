@@ -4,7 +4,7 @@ description: ""
 date: 2024-12-27
 ---
 
-It seems that every couple of years, I change my website, not just the design, but nearly the complete tech stack 😬. In 2016, I moved to Jekyll, in 2021, I chose [Nuxt](https://nuxt.com/), and now, at the end of 2024, I've moved it all to [Eleventy](https://www.11ty.dev/).
+It seems that every couple of years, I change my website, not just the design, but nearly the complete tech stack 😬. In 2016, I moved to [Jekyll](https://jekyllrb.com/), in 2021, I chose [Nuxt](https://nuxt.com/), and now, at the end of 2024, I've moved it all to [Eleventy](https://www.11ty.dev/).
 
 > TLDR: When looking at a new static site generator, look at the starter kits/themes/templates, and check if they are actively maintained. It doesn't really matter which generator you choose, but a good starter kit with proper docs and community support can save you a lot of headache. Also check what content migration steps are required (for example permalinks & images).
 
