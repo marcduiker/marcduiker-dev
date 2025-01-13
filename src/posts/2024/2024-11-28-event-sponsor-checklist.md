@@ -81,4 +81,4 @@ Questions to answer in an event report:
 
 ## Contributing to this checklist
 
-Do you have more tasks that can be included in this list? [Submit a PR please]((https://github.com/marcduiker/event-sponsor-checklist))! 🙏
+Do you have more tasks that can be included in this list? [Submit a PR please](https://github.com/marcduiker/event-sponsor-checklist)! 🙏
