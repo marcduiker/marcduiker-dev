@@ -12,7 +12,7 @@ date: 2025-01-08
 
 On Jan 8th, I gave my first presentation of the year at the [.NET Amsterdam Meetup](https://www.meetup.com/dotnet-amsterdam/)! This meetup is close to my heart since I've attended many of their meetups in the past and also got the opportunity to speak there a couple of times.
 
-The meetup was hosted by [JetBrains](https://www.jetbrains.com/) in their beautiful Amsterdam office. I was welcomed by Sasha Kolesova, the product marketing manager for .NET tools at JetBrains, and the .NET meetup organizers,  Eric Lieben and Thiemo van Leeuwen.
+The meetup was hosted by [JetBrains](https://www.jetbrains.com/) in their beautiful Amsterdam office. I was welcomed by Sasha Kolesova, the product marketing manager for .NET tools at JetBrains, and the .NET meetup organizers,  Erik Lieben and Thimo van Leeuwen.
 
 Thie meetup was themed around [Dapr](https://dapr.io/), I started with a Dapr introduction session, explaining the Dapr building blocks and doing demos on switching out state store components and showing the built-in resiliency features. The demos I used are available in the [Dapr Quickstarts](https://github.com/dapr/quickstarts) repo on GitHub.
 
@@ -22,7 +22,7 @@ The second session was by Florian van Dillen, who demonstrated in great detail h
 
 {% image "./src/assets/images/blog/2025/142.4.dotnet-ams.jpg", "Marc and his hat", "I started with explaining why I'm wearing the hat. Thanks to Sasha Kolesova for taking the picture!" %}
 
-Thank you Eric & Thiemo, for organizing this excellent Dapr 🎩 themed meetup, and Sasha, for hosting at this cool location and providing us with delicious pizza! 🍕
+Thank you Erik & Thimo, for organizing this excellent Dapr 🎩 themed meetup, and Sasha, for hosting at this cool location and providing us with delicious pizza! 🍕
 
 ---
 Do you like Dapr and want to show your support? Claim this [community supporter Holopin badge](https://bit.ly/dapr-supporter)!
