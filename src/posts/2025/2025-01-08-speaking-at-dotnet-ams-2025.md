@@ -20,7 +20,7 @@ Thie meetup was themed around [Dapr](https://dapr.io/), I started with a Dapr in
 
 The second session was by Florian van Dillen, who demonstrated in great detail how you can use .NET Aspire with Dapr to create distributed applications suitable for production. His demo application can be found [here](https://github.com/fvandillen/dapr-aspire).
 
-{% image "./src/assets/images/blog/2025/142.4.dotnet-ams.jpg", "Marc and his hat", "I started with explaining why I'm wearing the hat. Thanks to Sasha Kolesova for taking the picture!" %}
+{% image "./src/assets/images/blog/2025/142.4.dotnet-ams.jpg", "Florian speaking", "Florian van Dillen speaking about .NET Aspire and Dapr." %}
 
 Thank you Erik & Thimo, for organizing this excellent Dapr 🎩 themed meetup, and Sasha, for hosting at this cool location and providing us with delicious pizza! 🍕
 
