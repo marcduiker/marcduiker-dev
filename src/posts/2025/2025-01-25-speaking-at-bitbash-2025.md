@@ -9,13 +9,13 @@ date: 2025-01-27
 **TLDR:** <a href="https://github.com/diagrid-labs/dapr-resiliency-and-durable-execution" target="_blank">Code demos on GitHub</a>
 
 ---
-On Jan 24th, I was at [Bitbash](https://www.bitbash.nl/) in the Netherlands to give my session *'Failure is not an option: Durable Execution + Dapr = 🚀'*.
+On Jan 25th, I was at [Bitbash](https://www.bitbash.nl/) in the Netherlands to give my session *'Failure is not an option: Durable Execution + Dapr = 🚀'*.
 
-Bitbash is quite a new in-person conference in the Netherlands that focuses on Microsoft technology, such as .NET & Azure. The special thing about this conference is that it is completely free for attendees. This was the second edition of this conference and this year the theme was "Haunted". The organizers hired "the Ghostbusters" who were walking around in full gear, hunting for bugs that haunt our software.
+Bitbash is quite a new in-person conference in the Netherlands that focuses on Microsoft technology, such as .NET & Azure. The special thing about this conference is that it is completely free for attendees! This was the second edition of this conference and the theme this year was "Haunted". The organizers hired "The Ghostbusters" who were walking around in full gear, hunting for bugs that haunt our software 👻.
 
 The two-day conference started with a workshop day, where attendees could follow a half-day workshop. It was great to see Edwin van Wijk and Sander Molenkamp, both [Dapr Meteors](https://dapr.io/community/program/), giving another workshop on Dapr! The second day was the main conference day, with 2 tracks.
 
-My session was the first one of the day and started at 9:15 in the morning 🫠. I was happy to see so many enthusiastic people in the room who sacrificed their Saturday morning to learn about Dapr!
+My session was the first one of the day and started at 9:15 in the morning 🫠. I was happy to see so many enthusiastic people in the room who sacrificed their Saturday morning to learn about durable execution with Dapr Workflow!
 
 For my session, I used [DemoTime](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-demo-time), a VSCode extension created by [Elio Struyf](https://bsky.app/profile/eliostruyf.com), to navigate through my slides (Markdown) and code, and also execute the `dapr run` commands for my demos. It worked out really well, give DemoTime a try!
 
