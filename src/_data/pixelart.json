@@ -1,5 +1,9 @@
 [
- 
+  {
+    "name": "Knight Rider",
+    "description": "Personal project",
+    "filename": "knight_rider.gif"
+  },
   {
     "name": "Take care of your shelf",
     "description": "Personal project",
