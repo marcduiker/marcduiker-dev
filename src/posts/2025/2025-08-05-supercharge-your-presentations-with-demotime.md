@@ -136,7 +136,9 @@ If editing json or yaml files manually is not your cup of tea, DemoTime now incl
 
 ## My impression and tips
 
-I've given presentations using DemoTime at several conferences now and it worked flawlessly each time! 🚀 
+I've given presentations using DemoTime at several conferences now and it worked flawlessly each time! 🚀
+
+I really like that the presentation content is part of the GitHub repo where the demos are located. I usually add a devcontainer configuration to my repos, so people can easily run everything, incl the DemoTime-based presentation, in a GitHub Codespace or locally in a container.
 
 Here are some tips for using DemoTime:
 
