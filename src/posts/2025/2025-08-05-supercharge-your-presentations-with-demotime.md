@@ -138,6 +138,11 @@ If editing json or yaml files manually is not your cup of tea, DemoTime now incl
 
 I've given presentations using DemoTime at several conferences now and it worked flawlessly each time! 🚀
 
+Here are the links to GitHub repos that contain my DemoTime-based presentations:
+- [Dapr Resiliency and Durable Execution](https://github.com/diagrid-labs/dapr-resiliency-and-durable-execution)
+- [Dapr Building Block APIs](https://github.com/diagrid-labs/dapr-building-block-apis)
+- [Dapr Pub/Sub Deepdive (work in progress)](https://github.com/diagrid-labs/dapr-pub-sub-deep-dive)
+
 I really like that the presentation content is part of the GitHub repo where the demos are located. I usually add a devcontainer configuration to my repos, so people can easily run everything, incl the DemoTime-based presentation, in a GitHub Codespace or locally in a container.
 
 Here are some tips for using DemoTime:
