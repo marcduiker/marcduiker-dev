@@ -14,7 +14,7 @@ When it comes to the tools and format of my slides I started with [reveal.js](ht
 
 ## IDE-first approach
 
-Since all of my presentations involve demos, I was looking for a way to close the gap between showing slides, showing code, and running doing demos. Ideally I wanted to run the entire presentation inside an IDE. I'm a big fan of VSCode due to its extensibility and the fact that it runs on all platforms. So I looked into extensions that would allow me to create a presentation-like experience in VSCode.
+Since all of my presentations involve demos, I was looking for a way to close the gap between showing slides, showing code, and running demos. Ideally I wanted to run the entire presentation inside an IDE. I'm a big fan of VSCode due to its extensibility and the fact that it runs on all platforms. So I looked into extensions that would allow me to create a presentation-like experience in VSCode.
 
 The first solution I came across was [CodeTour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour), a VSCode extension by Jonathan Carter that allows the creation of guided tours through a codebase in a git repo. The extension also supported running terminal commands, which was great for starting my demo applications. I used CodeTour for several years, and it worked well, although it had some limitations for the slides. Eventually the development of CodeTour stopped while VSCode continued to evolve, and my CodeTours were not working any longer 😢.
 
