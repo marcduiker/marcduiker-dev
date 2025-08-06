@@ -78,7 +78,7 @@ There's an array of demo objects in the `demos` property that compose the presen
 I'm mostly using these five action types in my DemoTime presentations:
 
 - `openSlide`: Opens a markdown file as a slide.
-- `markdownPreview`: Opens a markdown file in the VSCode preview pane, which is great for showing a longer markdown document that does not fit the 16:9 slide ratio (e.g. a GitHub README.md).
+- `markdownPreview`: Opens a markdown file in the VSCode preview pane, which is great for showing a longer markdown document that does not fit the 16:9 slide ratio (e.g. a GitHub README).
 - `highlight`: Opens a file in the editor, and highlights the specified row(s).
 - `executeVSCodeCommand`: Executes a VSCode command, I typically use these to change the VSCode UI like showing or hiding panels, terminals, etc.
 - `executeTerminalCommand`: Executes a command in the VSCode terminal, I use this to run demo applications.
