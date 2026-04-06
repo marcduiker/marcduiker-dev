@@ -61,6 +61,8 @@
 
 .prose img {
   border-radius: var(--border-radius);
+  display: block;
+  margin-inline: auto;
 }
 
 @media screen(ltsm) {
