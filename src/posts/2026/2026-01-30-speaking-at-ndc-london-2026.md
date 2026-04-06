@@ -4,7 +4,7 @@ description: ""
 date: 2026-01-30
 ---
 
-{% image "./src/assets/images/blog/2026/152.1.ndc-london.jpeg", "Speaking at NDC London 2026", "Speaking at NDC London 2026 (photo by Alex Thissen)", [440] %}
+{% image "./src/assets/images/blog/2026/152.1.ndc-london.jpeg", "Speaking at NDC London 2026", "Speaking at NDC London 2026 (photo by Alex Thissen)", [960] %}
 
 **TLDR:** <a href="https://github.com/diagrid-labs/dapr-reliable-agentic-systems" target="_blank">Slides & code demos on GitHub</a>
 
@@ -15,7 +15,7 @@ The NDC conferences are known for their solid speaker lineup and taking great ca
 
 My session is based on this blog post, [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) by the Anthropic Engineering team, and covers different agentic patterns that range from very deterministic to more probabilistic. The implementation in the demo apps is done with Dapr Workflow, the Dapr Conversation API, and local models run with Ollama.
 
-{% image "./src/assets/images/blog/2026/152.2.ndc-london.png", "Reliable Agentic Systems Require Durable Execution", "Reliable Agentic Systems Require Durable Execution", [440] %}
+{% image "./src/assets/images/blog/2026/152.2.ndc-london.png", "Reliable Agentic Systems Require Durable Execution", "Reliable Agentic Systems Require Durable Execution", [960] %}
 
 This is the [repo with the demos](https://github.com/diagrid-labs/dapr-reliable-agentic-systems). It comes with a devcontainer configuration so you can run it yourself easily, either on GitHub Codespaces or locally. And you can use DemoTime to run through the slides and all the demos. 
 
