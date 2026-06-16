@@ -36,3 +36,21 @@
 .post .meta {
   font-size: var(--size-step-min-1);
 }
+
+/* Constrain tall/portrait images so they don't dominate the column.
+   The shortcode's positional `className` is applied to the figure/picture
+   container, so target the descendant <img>. */
+.prose .portrait img {
+  max-inline-size: 480px;
+  block-size: auto;
+  margin-inline: auto;
+}
+
+/* Dapr community supporter badge — render at 50% of its 528px intrinsic size.
+   Targets the badge by filename so it applies to every post that uses it
+   (both the blog/common/ and older blog/2023/ paths). */
+img[src*='dapr-community-supporter'] {
+  inline-size: 264px;
+  max-inline-size: 100%;
+  block-size: auto;
+}

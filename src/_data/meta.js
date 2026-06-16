@@ -20,6 +20,8 @@ export const creator = {
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
 export const themeColor = '#DD4462'; //  Manifest: defines the default theme color for the application
 export const themeBgColor = '#FBFBFB'; // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
+export const themeLight = '#FBFBFB'; // browser UI theme-color for light color scheme
+export const themeDark = '#343434'; // browser UI theme-color for dark color scheme
 export const opengraph_default = '/assets/images/main/marcduiker.dev.og.png'; // fallback/default meta image
 export const opengraph_default_alt =
   "I ❤️ OSS, Improving Developer Experience, Drawing Pixel Art, and Handcrafting Generative Art"; // alt text for default meta image"
@@ -80,6 +82,13 @@ export const greenweb = {
     domain: '',
     doctype: '',
     url: ''
+  }
+};
+export const tests = {
+  pa11y: {
+    // keep customPaths empty to test all pages in the showInSitemap collection
+    customPaths: ['/', '/about/', '/articles/', '/styleguide/'],
+    globalIgnore: []
   }
 };
 export const viewRepo = {
