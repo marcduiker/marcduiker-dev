@@ -1,12 +1,6 @@
 import Image from '@11ty/eleventy-img';
 import path from 'node:path';
-import htmlmin from 'html-minifier-terser';
 
-/**
- * Converts an attribute map object to a string of HTML attributes.
- * @param {Object} attributeMap - The attribute map object.
- * @returns {string} - The string of HTML attributes.
- */
 const stringifyAttributes = attributeMap => {
   return Object.entries(attributeMap)
     .map(([attribute, value]) => {
@@ -16,40 +10,46 @@ const stringifyAttributes = attributeMap => {
     .join(' ');
 };
 
-/**
- * Generates an HTML image element with responsive images and optional caption.
- * @param {string} src - The path to the image source file.
- * @param {string} [alt=''] - The alternative text for the image.
- * @param {string} [caption=''] - The caption for the image.
- * @param {string} [loading='lazy'] - The loading attribute for the image.
- * @param {string} [className] - The CSS class name for the image element.
- * @param {string} [sizes='90vw'] - The sizes attribute for the image.
- * @param {number[]} [widths=[440, 650, 960, 1200]] - The widths for generating responsive images.
- * @param {string[]} [formats=['gif', 'avif', 'webp', 'jpeg']] - The formats for generating responsive images.
- * @returns {string} - The HTML image element.
- */
-export const imageShortcode = async (
-  src,
-  alt = '',
-  caption = '',
-  loading = 'lazy',
-  className,
-  sizes = '90vw',
-  widths = [440, 650, 960, 1200],
-  formats = ['webp']
-) => {
+const errorSrcRequired = shortcodeName => {
+  throw new Error(`src parameter is required for {% ${shortcodeName} %} shortcode`);
+};
+
+// Handles image processing
+const processImage = async options => {
+  let {
+    src,
+    alt = '',
+    caption = '',
+    loading = 'lazy',
+    containerClass,
+    imageClass,
+    widths = [650, 960, 1400],
+    sizes,
+    formats = ['avif', 'webp', 'jpeg']
+  } = options;
+
+  // Set sizes based on loading (if not provided)
+  if (sizes == null) {
+    sizes = loading === 'lazy' ? 'auto' : '100vw';
+  }
+
+  // Prepend "./src" if not present
+  if (!src.startsWith('./src')) {
+    src = `./src${src}`;
+  }
+
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
     urlPath: '/assets/images/',
-    outputDir: './dist/assets/images/', 
+    outputDir: './dist/assets/images/',
+    // Preserve animation for animated sources (e.g. .gif). With `animated: true`,
+    // eleventy-img reads every frame and auto-restricts the output of animated
+    // images to animation-capable formats (webp/gif), dropping avif/jpeg. Static
+    // images are unaffected. `limitInputPixels: false` allows large multi-frame GIFs.
     sharpOptions: {
       animated: true,
-      limitInputPixels: 26840268900,
-      withoutEnlargement: true,
-      unlimited: false,
-      fit: 'inside'
-
+      limitInputPixels: false
     },
     filenameFormat: (id, src, width, format, options) => {
       const extension = path.extname(src);
@@ -58,20 +58,11 @@ export const imageShortcode = async (
     }
   });
 
-  
+  // Fallback <img src>: prefer a static raster format, but fall back to whatever
+  // was generated (animated GIFs yield only webp, so metadata.jpeg is undefined).
+  const fallbackFormat = metadata.jpeg || metadata.png || metadata.webp || Object.values(metadata)[0];
+  const lowsrc = fallbackFormat[fallbackFormat.length - 1];
 
-  // Getting the URL to use
-  let imgSrc = src;
-  if (!imgSrc.startsWith('.')) {
-    const inputPath = this.page.inputPath;
-    const pathParts = inputPath.split('/');
-    pathParts.pop();
-    imgSrc = `${pathParts.join('/')}/${src}`;
-  }
-
-  //const isGif = imgSrc.endsWith('.gif');
-  //const lowsrc = isGif ? metadata.gif[metadata.gif.length - 1] : metadata.jpeg[metadata.jpeg.length - 1];
-  const lowsrc = metadata.webp[metadata.webp.length - 1];
   const imageSources = Object.values(metadata)
     .map(imageFormat => {
       return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat
@@ -80,29 +71,57 @@ export const imageShortcode = async (
     })
     .join('\n');
 
-  const imgageAttributes = stringifyAttributes({
-    src: lowsrc.url,
-    width: lowsrc.width,
-    height: lowsrc.height,
+  const imageAttributes = stringifyAttributes({
+    'src': lowsrc.url,
+    'width': lowsrc.width,
+    'height': lowsrc.height,
     alt,
     loading,
-    decoding: loading === 'eager' ? 'sync' : 'async'
+    'decoding': loading === 'eager' ? 'sync' : 'async',
+    ...(imageClass && {class: imageClass}),
+    'eleventy:ignore': ''
   });
 
-  const imageElement = caption
-    ? `<figure slot="image" class="flow ${className ? `${className}` : ''}">
-				<picture>
-					${imageSources}
-					<img
-					${imgageAttributes}>
-				</picture>
-				<figcaption>${caption}</figcaption>
-			</figure>`
-    : `<picture slot="image" class="flow ${className ? `${className}` : ''}">
-				${imageSources}
-				<img
-				${imgageAttributes}>
-			</picture>`;
+  const pictureElement = `<picture> ${imageSources}<img ${imageAttributes}></picture>`;
 
-  return htmlmin.minify(imageElement, {collapseWhitespace: true});
+  return caption
+    ? `<figure slot="image"${containerClass ? ` class="${containerClass}"` : ''}>${pictureElement}<figcaption>${caption}</figcaption></figure>`
+    : `<picture slot="image"${containerClass ? ` class="${containerClass}"` : ''}>${imageSources}<img ${imageAttributes}></picture>`;
+};
+
+// Positional parameters (legacy)
+// NOTE: parameter order matches this site's historical `{% image %}` call sites
+// (src, alt, caption, loading, className, sizes, widths, formats) so existing
+// markdown/njk usages keep working. Named params (imageKeys) use the new model.
+export const imageShortcode = async (
+  src,
+  alt,
+  caption,
+  loading,
+  className,
+  sizes,
+  widths,
+  formats
+) => {
+  if (!src) {
+    errorSrcRequired('image');
+  }
+  return processImage({
+    src,
+    alt,
+    caption,
+    loading,
+    containerClass: className,
+    widths,
+    sizes,
+    formats
+  });
+};
+
+// Named parameters
+export const imageKeysShortcode = async (options = {}) => {
+  if (!options.src) {
+    errorSrcRequired('imageKeys');
+  }
+  return processImage(options);
 };

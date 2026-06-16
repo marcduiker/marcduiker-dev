@@ -1,0 +1,31 @@
+{
+  "title": "Colors",
+  "description": "Hex color codes converted to OKLCH palettes by create-colors.js. neutral colors become palettes; light_dark colors are kept exactly as-is plus a chroma-reduced Subdued variant for dark mode; standalone colors are kept as-is.",
+  "shades_neutral": [
+    {
+      "name": "Gray",
+      "value": "#808080"
+    }
+  ],
+  "shades_vibrant": [],
+  "light_dark": [
+    {
+      "name": "Gold",
+      "value": "#feae34"
+    },
+    {
+      "name": "Blue",
+      "value": "#0095e9"
+    },
+    {
+      "name": "Yellow",
+      "value": "#fee761"
+    }
+  ],
+  "standalone": [
+    {
+      "name": "Dark Highlight",
+      "value": "#124e89"
+    }
+  ]
+}

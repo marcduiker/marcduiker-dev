@@ -4,7 +4,7 @@ description: ""
 date: 2026-06-03
 ---
 
-{% image "./src/assets/images/blog/2026/157.1.devsum.jpg", "Speaking at DevSum 2026", "Speaking at DevSum 2026", [960] %}
+{% image "./src/assets/images/blog/2026/157.1.devsum.jpg", "Speaking at DevSum 2026", "Speaking at DevSum 2026", "lazy", "portrait" %}
 
 ---
 **TLDR:** Check out the [durable-execution-battle](https://github.com/diagrid-labs/durable-execution-battle) repo to see the same workflow implemented across multiple workflow-as-code platforms.

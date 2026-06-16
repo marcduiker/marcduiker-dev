@@ -1,6 +1,21 @@
 /* Global variables.  */
-/* This turned out a little too complex, and probably is overly specific. I'm still fiddling with this. Should work by itself though, once you define your design token colors.
-Adjust fallbacks if modern color syntax not supported for text and bg variants. */
+/* Color migration: the design-token color palette is now GENERATED from
+   `src/_data/designTokens/colorsBase.json` by `src/_config/setup/create-colors.js`
+   (OKLCH, via colorjs.io). Tailwind emits the generated tokens as custom properties:
+   --color-gray-100..900, --color-gold, --color-gold-subdued, --color-blue,
+   --color-blue-subdued, --color-yellow, --color-yellow-subdued, --color-dark-highlight.
+
+   To keep the rest of this file (and components like prose/theme-switch/pagination)
+   unchanged, the previous named tokens are re-aliased onto the generated palette below.
+   Brand accents (gold/blue/yellow) map 1:1 to the previous highlight colors. */
+
+:root {
+  --color-base-dark: var(--color-gray-900);
+  --color-base-light: var(--color-gray-100);
+  --color-primary-highlight: var(--color-gold);
+  --color-secondary-highlight: var(--color-blue);
+  --color-tertiary-highlight: var(--color-yellow);
+}
 
 /* Basic variable definitions for color schemes */
 :root {
@@ -58,7 +73,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
     --color-tertiary: var(--color-tertiary-highlight);
     /* Fallbacks if modern color syntax not supported */
     --color-text-accent: #a8a8a8;
-    --color-bg-accent: #124e89;
+    --color-bg-accent: var(--color-dark-highlight);
     --color-bg-accent-2: #808080;
     --card-bg: var(--color-bg-accent);
   }
@@ -75,7 +90,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   --color-tertiary: var(--color-tertiary-highlight);
   /* Fallbacks if modern color syntax not supported */
   --color-text-accent: #a8a8a8;
-  --color-bg-accent: #124e89;
+  --color-bg-accent: var(--color-dark-highlight);
   --color-bg-accent-2: #404040;
   --card-bg: var(--color-bg-accent);
 }
@@ -95,7 +110,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   @media (prefers-color-scheme: dark) {
     :root {
       --color-text-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--color-bg));
-      --color-bg-accent: color-mix(in oklab, #124e89 92%, var(--color-text));
+      --color-bg-accent: color-mix(in oklab, var(--color-dark-highlight) 92%, var(--color-text));
       --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 80%, var(--color-text));
       /* add opacity with color-mix */
       --color-primary: var(--color-primary-sub-20);
@@ -106,7 +121,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
 
   :root[data-theme='dark'] {
     --color-text-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--color-bg));
-    --color-bg-accent: color-mix(in oklab, #124e89 92%, var(--color-text));
+    --color-bg-accent: color-mix(in oklab, var(--color-dark-highlight) 92%, var(--color-text));
     --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 80%, var(--color-text));
     /* add opacity with color-mix */
     --color-primary: var(--color-primary-sub-20);
