@@ -11,7 +11,9 @@
 
     <!-- 2 title -->
     <title>
-      {%- if title -%}
+      {%- if title and layout == 'post' -%}
+        {{- title }} | {{ meta.siteName -}}
+      {%- elif title -%}
         {{- title -}}
       {%- else -%}
         {{- meta.siteName -}}

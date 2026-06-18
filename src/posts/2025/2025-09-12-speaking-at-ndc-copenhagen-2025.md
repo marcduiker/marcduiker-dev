@@ -4,7 +4,7 @@ description: "Recap of NDC Copenhagen 2025, with an async messaging deep dive in
 date: 2025-09-12
 ---
 
-{% image "./src/assets/images/blog/2025/147.1.ndccopenhagen.jpg", "NDC Arriving at Copenhagen 2025", "Arriving at NDC Copenhagen 2025", [440] %}
+{% imageKeys { src: "./src/assets/images/blog/2025/147.1.ndccopenhagen.jpg", alt: "NDC Arriving at Copenhagen 2025", caption: "Arriving at NDC Copenhagen 2025", widths: [440] } %}
 
 **TLDR:** <a href="https://github.com/diagrid-labs/dapr-pub-sub-deep-dive" target="_blank">Slides & code demos on GitHub</a>
 

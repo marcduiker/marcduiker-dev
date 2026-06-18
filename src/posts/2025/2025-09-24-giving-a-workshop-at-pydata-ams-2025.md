@@ -4,7 +4,7 @@ description: "Recap of a Dapr Agents workshop at PyData Amsterdam 2025, building
 date: 2025-09-24
 ---
 
-{% image "./src/assets/images/blog/2025/148.1.pydata.jpg", "Dana presenting at the PyData Amsterdam workshop", "Dana presenting at the PyData Amsterdam workshop", [440] %}
+{% imageKeys { src: "./src/assets/images/blog/2025/148.1.pydata.jpg", alt: "Dana presenting at the PyData Amsterdam workshop", caption: "Dana presenting at the PyData Amsterdam workshop", widths: [440] } %}
 
 **TLDR:** <a href="https://www.diagrid.io/dapr-university#dapr-agents" target="_blank">Learn Dapr Agents via Dapr University</a>
 

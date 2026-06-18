@@ -4,7 +4,7 @@ description: "Recap of speaking at HeapCon 2025 in Belgrade about building distr
 date: 2025-10-31
 ---
 
-{% image "./src/assets/images/blog/2025/151.1.heapcon.jpg", "Speaking at HeapCon 2025", "Speaking at HeapCon 2025", [440] %}
+{% imageKeys { src: "./src/assets/images/blog/2025/151.1.heapcon.jpg", alt: "Speaking at HeapCon 2025", caption: "Speaking at HeapCon 2025", widths: [440] } %}
 
 **TLDR:** <a href="https://github.com/diagrid-labs/dapr-building-block-apis" target="_blank">Slides & code demos on GitHub</a>
 

@@ -14,7 +14,7 @@ On June 2 and 3, I was at [DevSum](https://www.devsum.se/) in Stockholm to give 
 
 This was a brand new session that I created for DevSum. It was very demo heavy since I was running the same workflow across multiple workflow platforms to compare the developer experience and capabilities. I compared Cadence, Temporal, Conductor, Dapr Workflow and Restate. I had way too much content for the 50 minute time slot, but at least I was able to show the workflow running on all platforms and share my conclusions at the end.
 
-{% image "./src/assets/images/blog/2026/157.2.devsum.jpg", "Title slide in VSCode", "Title slide in VSCode", [960] %}
+{% imageKeys { src: "./src/assets/images/blog/2026/157.2.devsum.jpg", alt: "Title slide in VSCode", caption: "Title slide in VSCode", widths: [960] } %}
 
 A big thank you to the DevSum organizers and sponsors for making this event happen, and thanks to the attendees for joining my session and the great conversations afterwards!
 

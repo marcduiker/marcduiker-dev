@@ -4,7 +4,7 @@ description: "Recap of Container Days London 2026, on decoupling application cod
 date: 2026-02-11
 ---
 
-{% image "./src/assets/images/blog/2026/153.1.containerdays-london.jpeg", "Speaking at Container Days London 2026", "Speaking at Container Days London 2026 (photo by Mauricio 'Salaboy' Salatino )", [960] %}
+{% imageKeys { src: "./src/assets/images/blog/2026/153.1.containerdays-london.jpeg", alt: "Speaking at Container Days London 2026", caption: "Speaking at Container Days London 2026 (photo by Mauricio 'Salaboy' Salatino )", widths: [960] } %}
 
 **TLDR:** <a href="https://github.com/diagrid-labs/dapr-building-block-apis" target="_blank">Slides & code demos on GitHub</a>
 
@@ -19,7 +19,7 @@ This is the [repo with the demos](https://github.com/diagrid-labs/dapr-building-
 
 A big thank you to the Container Days organizers and sponsors for making this event happen, and thanks to the attendees for attending my session and providing me with positive feedback!
 
-{% image "./src/assets/images/blog/2026/153.2.containerdays-london.jpeg", "Session Feedback captured by EngageTime", "Session Feedback captured by EngageTime", [440] %}
+{% imageKeys { src: "./src/assets/images/blog/2026/153.2.containerdays-london.jpeg", alt: "Session Feedback captured by EngageTime", caption: "Session Feedback captured by EngageTime", widths: [440] } %}
 
 ---
 Do you like Dapr and want to show your support? Claim this [community supporter Holopin badge](https://bit.ly/dapr-supporter)!

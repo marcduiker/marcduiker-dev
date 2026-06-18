@@ -14,6 +14,11 @@ const errorSrcRequired = shortcodeName => {
   throw new Error(`src parameter is required for {% ${shortcodeName} %} shortcode`);
 };
 
+// Guards against invalid `loading` values. A common mistake is passing a widths
+// array (e.g. [960]) into the positional `loading` slot, which would emit an
+// invalid loading="960". Anything that isn't exactly 'eager' becomes 'lazy'.
+export const normalizeLoading = value => (value === 'eager' ? 'eager' : 'lazy');
+
 // Handles image processing
 const processImage = async options => {
   let {
@@ -27,6 +32,8 @@ const processImage = async options => {
     sizes,
     formats = ['avif', 'webp', 'jpeg']
   } = options;
+
+  loading = normalizeLoading(loading);
 
   // Set sizes based on loading (if not provided)
   if (sizes == null) {

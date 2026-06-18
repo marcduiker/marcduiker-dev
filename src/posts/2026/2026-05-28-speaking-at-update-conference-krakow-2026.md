@@ -4,7 +4,7 @@ description: "Recap of Update Conference Krakow 2026, building reliable agentic 
 date: 2026-05-28
 ---
 
-{% image "./src/assets/images/blog/2026/156.1.updateconf.jpg", "Speaking at Update Conference Krakow 2026", "Speaking at Update Conference Krakow 2026", [960] %}
+{% imageKeys { src: "./src/assets/images/blog/2026/156.1.updateconf.jpg", alt: "Speaking at Update Conference Krakow 2026", caption: "Speaking at Update Conference Krakow 2026", widths: [960] } %}
 
 **TLDR:** <a href="https://github.com/diagrid-labs/dapr-reliable-agentic-systems" target="_blank">Slides & code demos on GitHub</a>
 

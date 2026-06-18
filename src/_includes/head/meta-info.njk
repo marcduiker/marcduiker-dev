@@ -1,7 +1,5 @@
 {% set metaDescription %}
-  {%- if discover.description -%}
-    {{- discover.description -}}
-  {%- elif description -%}
+  {%- if description -%}
     {{- description -}}
   {%- else -%}
     {{- meta.siteDescription -}}
@@ -39,12 +37,16 @@
 
 <!-- Open Graph meta  -->
 <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
-<meta property="og:type" content="website" />
+{% if layout == 'post' %}
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="{{ date | toIsoString }}" />
+  <meta property="article:modified_time" content="{{ (lastUpdated or date) | toIsoString }}" />
+{% else %}
+  <meta property="og:type" content="website" />
+{% endif %}
 <meta
   property="og:title"
-  content="{%- if discover.title -%}
-    {{- discover.title -}}
-  {%- elif title -%}
+  content="{%- if title -%}
     {{- title -}}
   {%- else -%}
     {{- meta.siteName -}}

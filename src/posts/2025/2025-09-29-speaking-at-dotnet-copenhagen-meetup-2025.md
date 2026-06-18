@@ -4,7 +4,7 @@ description: "Recap of a Dapr-focused .NET Copenhagen Meetup, with a session on 
 date: 2025-09-29
 ---
 
-{% image "./src/assets/images/blog/2025/149.1.net-meetup-copenhagen.jpeg", "Speaking at the .NET Copenhagen meetup", "Speaking at the .NET Copenhagen meetup", [440] %}
+{% imageKeys { src: "./src/assets/images/blog/2025/149.1.net-meetup-copenhagen.jpeg", alt: "Speaking at the .NET Copenhagen meetup", caption: "Speaking at the .NET Copenhagen meetup", widths: [440] } %}
 
 **TLDR:** <a href="https://github.com/diagrid-labs/dapr-resiliency-and-durable-execution" target="_blank">Slides & code demos on GitHub</a>
 
