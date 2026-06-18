@@ -1,6 +1,6 @@
 ---
 title: "Speaking at Techorama Belgium 2026"
-description: ""
+description: "Recap of Techorama Belgium 2026, performing live hardware synthesizer music sequenced by Dapr Workflow to show how it orchestrates microservices."
 date: 2026-05-13
 ---
 

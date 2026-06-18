@@ -1,7 +1,7 @@
 ---
 title: "MC-ing at MSBuild The Netherlands"
 permalink: "/articles/mc-ingmsbuild/"
-description: ""
+description: "Behind the scenes of MC-ing at MSBuild Netherlands, Microsoft's local flagship developer conference featuring Azure, GitHub, AI, and Security sessions."
 date: 2023-10-01
 ---
 

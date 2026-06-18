@@ -1,6 +1,6 @@
 ---
 title: "Speaking at FutureTech 2026"
-description: ""
+description: "Recap of FutureTech 2026, orchestrating microservices with Dapr Workflow to sequence live synthesizer music via Web MIDI in a durable execution demo."
 date: 2026-03-11
 ---
 

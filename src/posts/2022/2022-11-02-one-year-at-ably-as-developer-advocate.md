@@ -1,7 +1,7 @@
 ---
 title: "One year at Ably as a Developer Advocate"
 permalink: "/articles/one-year-at-ably-as-developer-advocate/"
-description: ""
+description: "Reflections after one year as a Developer Advocate at Ably, covering real-time demos, developer tooling, conference talks, roadmaps, and DevRel lessons."
 date: 2022-11-02
 ---
 

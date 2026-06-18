@@ -1,7 +1,7 @@
 ---
 title: "Participating in Festive Tech Calendar 2023"
 permalink: "/articles/festive-tech-calendar-2023/"
-description: ""
+description: "Participating in Festive Tech Calendar 2023 with a Christmas-themed session on how Santa orchestrates the elves using Dapr Workflow patterns in .NET."
 date: 2023-12-20
 ---
 

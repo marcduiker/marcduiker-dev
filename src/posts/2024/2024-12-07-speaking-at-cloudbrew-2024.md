@@ -1,6 +1,6 @@
 ---
 title: "Speaking at CloudBrew 2024"
-description: ""
+description: "My CloudBrew 2024 session in Belgium on durable execution with Dapr, presented using the DemoTime VSCode extension to drive slides, code, and demos."
 date: 2024-12-12
 ---
 

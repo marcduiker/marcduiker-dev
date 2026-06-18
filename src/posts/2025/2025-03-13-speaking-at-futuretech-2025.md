@@ -1,6 +1,6 @@
 ---
 title: "Speaking at FutureTech 2025"
-description: ""
+description: "Recap of speaking at FutureTech 2025 in the Netherlands about durable execution with Dapr Workflow, with live demos run from VSCode using DemoTime."
 date: 2025-03-14
 ---
 

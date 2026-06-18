@@ -1,6 +1,6 @@
 ---
 title: "Giving a Dapr Agents workshop at Pyladies Amsterdam"
-description: ""
+description: "Recap of a hands-on Dapr Agents workshop for the PyLadies Amsterdam community, hosted at JetBrains, building AI agents with the Dapr Agents quickstarts."
 date: 2025-05-27
 ---
 

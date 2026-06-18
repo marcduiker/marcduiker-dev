@@ -1,7 +1,7 @@
 ---
 title: "Speaking at FutureTech 2024 about Dapr Actors"
 permalink: "/articles/speaking-at-futuretech-2024/"
-description: ""
+description: "My FutureTech 2024 session in Utrecht on Dapr Actors, building distributed and concurrent applications with the Actor Model using the Dapr APIs."
 date: 2024-04-17
 ---
 

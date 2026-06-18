@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - Table Lesson (.NET Core)"
 permalink: "/articles/azfuncuni-table-lesson-dotnet/"
-description: ""
+description: "Learn how to use Azure Table storage output and input bindings in Azure Functions with .NET Core, covering TableEntity, IAsyncCollector and CloudTable."
 date: 2021-01-17
 ---
 

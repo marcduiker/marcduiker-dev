@@ -1,7 +1,7 @@
 ---
 title: "Attending DevRelCon London 2023"
 permalink: "/articles/devrelcon-london-2023/"
-description: ""
+description: "Reflections on attending DevRelCon London 2023, designing the conference logo, and connecting with the Developer Relations community."
 date: 2023-09-14
 ---
 

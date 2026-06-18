@@ -1,7 +1,7 @@
 ---
 title: "Speaking at the Tweakers Developers Summit 2023"
 permalink: "/articles/speaking-at-tweakers-dev-summit/"
-description: ""
+description: "A recap of speaking at the Tweakers Developers Summit 2023 in Utrecht, covering how Dapr speeds up distributed systems development with building block APIs."
 date: 2023-09-17
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Speaking at NDC Porto about Dapr workflow"
 permalink: "/articles/speaking-at-ndcporto-2023/"
-description: ""
+description: "A recap of speaking at NDC Porto 2023 about orchestrating business logic reliably with Dapr Workflow as code, plus slides and demo source on GitHub."
 date: 2023-10-20
 ---
 

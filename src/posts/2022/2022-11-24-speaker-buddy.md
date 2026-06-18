@@ -1,7 +1,7 @@
 ---
 title: "Be ready for failure on stage: introducing the Speaker Buddy System"
 permalink: "/articles/speaker-buddy/"
-description: ""
+description: "Be prepared for technical failures on stage with the Speaker Buddy System, plus tips on backup laptops, cloud storage, and cloud coding environments."
 date: 2022-11-24
 ---
 

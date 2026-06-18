@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - Lesson Tips"
 permalink: "/articles/azfuncuni-lesson-tips/"
-description: ""
+description: "Tips for getting started with Azure Functions University, covering the YouTube playlists, GitHub repo, VSCode workspaces and CodeTour."
 date: 2021-05-19
 ---
 

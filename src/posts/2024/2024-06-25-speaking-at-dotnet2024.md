@@ -1,7 +1,7 @@
 ---
 title: "Speaking at dotnet2024 about Dapr Resiliency & Durable Execution"
 permalink: "/articles/speaking-at-dotnet2024/"
-description: ""
+description: "My dotnet2024 session in Madrid on Dapr resiliency and durable execution, presented entirely from VSCode using the CodeTour extension for slides and demos."
 date: 2024-06-25
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Speaking at Container Days London 2026"
-description: ""
+description: "Recap of Container Days London 2026, on decoupling application code from infrastructure with Dapr, including Dapr Workflow and the Diagrid Dev Dashboard."
 date: 2026-02-11
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Speaking at KubeCon Europe 2025"
-description: ""
+description: "Recap of KubeCon Europe 2025 in London: running the Dapr project kiosk and giving two sessions on durable execution with Dapr Workflow."
 date: 2025-04-04
 ---
 

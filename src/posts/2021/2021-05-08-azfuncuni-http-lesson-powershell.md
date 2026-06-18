@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - HTTP Lesson (PowerShell)"
 permalink: "/articles/azfuncuni-http-lesson-powershell/"
-description: ""
+description: "Learn how to build HTTP triggered Azure Functions in PowerShell, handling GET and POST requests, custom routes and request parameters."
 date: 2021-05-08
 ---
 

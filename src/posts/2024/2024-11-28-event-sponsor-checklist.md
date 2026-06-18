@@ -1,6 +1,6 @@
 ---
 title: "Event sponsor checklist"
-description: ""
+description: "A practical checklist for sponsoring a tech conference booth, covering everything to do before, during, and after the event, plus a Know Before You Go doc."
 date: 2024-11-28
 ---
 

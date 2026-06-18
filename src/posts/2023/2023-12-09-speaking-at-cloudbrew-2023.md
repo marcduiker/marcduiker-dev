@@ -1,7 +1,7 @@
 ---
 title: "Speaking at Cloudbrew 2023"
 permalink: "/articles/speaking-at-cloudbrew-2023/"
-description: ""
+description: "A recap of speaking at Cloudbrew 2023 in Mechelen about building distributed applications with Dapr Actors, including slides and demos on GitHub."
 date: 2023-12-09
 ---
 

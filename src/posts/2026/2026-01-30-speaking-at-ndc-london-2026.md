@@ -1,6 +1,6 @@
 ---
 title: "Speaking at NDC London 2026"
-description: ""
+description: "Recap of NDC London 2026, exploring why reliable agentic systems need durable execution, using Dapr Workflow, the Dapr Conversation API, and Ollama."
 date: 2026-01-30
 ---
 

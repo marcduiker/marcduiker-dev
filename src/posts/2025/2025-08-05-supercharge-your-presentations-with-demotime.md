@@ -1,6 +1,6 @@
 ---
 title: "Supercharge your technical presentations with DemoTime"
-description: ""
+description: "How to deliver stress-free technical presentations from inside VSCode with DemoTime, mixing markdown slides, code, and scripted live demos."
 date: 2025-08-05
 ---
 

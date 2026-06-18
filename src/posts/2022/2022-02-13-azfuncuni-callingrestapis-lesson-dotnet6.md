@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - Calling third-party REST APIs (.NET 6)"
 permalink: "/articles/azfuncuni-callingrestapis-lesson-dotnet6/"
-description: ""
+description: "Learn how to call third-party REST APIs from Azure Functions in .NET 6 using Refit, defining typed API clients and adding custom parameters."
 date: 2022-02-13
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Stop adding business value and become an artist with your IT skills"
 permalink: "/articles/devopsdays-creative-coding/"
-description: ""
+description: "An ignite talk at DevOpsDays Eindhoven on creative coding, exploring how to use your IT skills as an artist with tools like P5js and The Coding Train."
 date: 2023-10-12
 ---
 

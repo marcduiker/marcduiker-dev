@@ -1,6 +1,6 @@
 ---
 title: "Speaking at HeapCon 2025"
-description: ""
+description: "Recap of speaking at HeapCon 2025 in Belgrade about building distributed applications with ease using Dapr building block APIs."
 date: 2025-10-31
 ---
 

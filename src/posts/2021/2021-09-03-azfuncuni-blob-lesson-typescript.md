@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - Blob Lesson (TypeScript)"
 permalink: "/articles/azfuncuni-blob-lesson-typescript/"
-description: ""
+description: "Learn how to use Azure Blob storage triggers and bindings in TypeScript Azure Functions, including binding expressions and the Blob storage SDK."
 date: 2021-09-03
 ---
 

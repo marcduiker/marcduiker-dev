@@ -1,7 +1,7 @@
 ---
 title: "Speaking at BuildStuff 2023"
 permalink: "/articles/speaking-at-buildstuff-2023/"
-description: ""
+description: "A recap of speaking at BuildStuff 2023 in Vilnius about orchestrating business logic reliably with Dapr Workflow as code, with slides and demos."
 date: 2023-11-18
 ---
 

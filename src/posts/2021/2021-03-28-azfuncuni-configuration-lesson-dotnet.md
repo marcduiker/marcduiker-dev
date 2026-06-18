@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - Configuration Lesson (.NET Core)"
 permalink: "/articles/azfuncuni-configuration-lesson-dotnet/"
-description: ""
+description: "Learn how to manage configuration and app settings in .NET Core Azure Functions, using the Azure CLI and the App Configuration service."
 date: 2021-03-28
 ---
 

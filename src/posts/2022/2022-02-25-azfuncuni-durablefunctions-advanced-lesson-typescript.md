@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - Durable Functions Advanced Patterns (TypeScript)"
 permalink: "/articles/azfuncuni-durablefunctions-advanced-lesson-typescript/"
-description: ""
+description: "Explore advanced Durable Functions patterns in TypeScript, including fan-out/fan-in, sub-orchestration, and external events for human interaction."
 date: 2022-02-25
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - Durable Functions Introduction & Chaining (TypeScript)"
 permalink: "/articles/azfuncuni-durablefunctions-lesson-typescript/"
-description: ""
+description: "Get started with Durable Functions in TypeScript Azure Functions, learning function chaining, orchestrations, retries and the circuit breaker pattern."
 date: 2021-02-14
 ---
 

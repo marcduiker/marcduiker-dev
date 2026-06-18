@@ -1,7 +1,7 @@
 ---
 title: "Speaking at Swetugg Göteborg"
 permalink: "/articles/speaking-at-swetugg-goteborg-2023/"
-description: ""
+description: "A recap of speaking at Swetugg Goteborg 2023, giving two Dapr sessions on building block APIs and orchestrating business logic with workflow as code."
 date: 2023-10-27
 ---
 

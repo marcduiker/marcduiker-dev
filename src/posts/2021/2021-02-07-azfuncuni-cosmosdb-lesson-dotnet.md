@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - CosmosDB Lesson (.NET Core)"
 permalink: "/articles/azfuncuni-cosmosdb-lesson-dotnet/"
-description: ""
+description: "Learn how to use Azure Cosmos DB triggers and bindings in .NET Core Azure Functions, including the emulator, Key Vault and dependency injection."
 date: 2021-02-07
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Speaking at the .NET Amsterdam Meetup"
-description: ""
+description: "Recap of a Dapr-themed .NET Amsterdam Meetup at JetBrains, with a Dapr introduction, building blocks, resiliency demos, and .NET Aspire integration."
 date: 2025-01-08
 ---
 

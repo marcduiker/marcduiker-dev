@@ -1,6 +1,6 @@
 ---
 title: "Speaking at the .NET Copenhagen Meetup 2025"
-description: ""
+description: "Recap of a Dapr-focused .NET Copenhagen Meetup, with a session on Dapr Workflow and resiliency presented from VSCode using DemoTime and EngageTime polls."
 date: 2025-09-29
 ---
 

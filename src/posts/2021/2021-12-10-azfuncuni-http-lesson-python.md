@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - HTTP Lesson (Python)"
 permalink: "/articles/azfuncuni-http-lesson-python/"
-description: ""
+description: "Learn how to build HTTP triggered Azure Functions in Python, handling GET and POST requests and creating new functions from scratch."
 date: 2021-12-10
 ---
 

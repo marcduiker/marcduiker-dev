@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - HTTP Lesson (TypeScript)"
 permalink: "/articles/azfuncuni-http-lesson-typescript/"
-description: ""
+description: "Learn how to build HTTP triggered Azure Functions in TypeScript, handling GET and POST requests and creating new functions from scratch."
 date: 2021-04-15
 ---
 

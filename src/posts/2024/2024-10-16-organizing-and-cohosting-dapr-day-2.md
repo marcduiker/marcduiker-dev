@@ -1,6 +1,6 @@
 ---
 title: "Organizing and co-hosting Dapr Day - Dapr's 5th anniversary"
-description: ""
+description: "Behind the scenes of organizing and co-hosting Dapr Day for the Dapr projects 5th anniversary with the CNCF, plus links to all session recordings."
 date: 2024-10-16
 ---
 

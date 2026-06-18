@@ -1,6 +1,6 @@
 ---
 title: "Giving a workshop at PyData Amsterdam 2025"
-description: ""
+description: "Recap of a Dapr Agents workshop at PyData Amsterdam 2025, building AI applications with the Dapr Agents quickstarts and lessons learned for large groups."
 date: 2025-09-24
 ---
 

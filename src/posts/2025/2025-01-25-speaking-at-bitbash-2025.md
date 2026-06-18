@@ -1,6 +1,6 @@
 ---
 title: "Speaking at Bitbash 2025"
-description: ""
+description: "Speaking at Bitbash 2025 in the Netherlands about durable execution with Dapr Workflow, presented from VSCode using the DemoTime extension."
 date: 2025-01-27
 ---
 

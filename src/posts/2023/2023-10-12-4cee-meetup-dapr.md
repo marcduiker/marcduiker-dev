@@ -1,7 +1,7 @@
 ---
 title: "Speaking at 4CEE Tech Talk about Dapr"
 permalink: "/articles/4cee-meetup-dapr/"
-description: ""
+description: "A recap of giving a Dapr intro tech talk at the 4CEE meetup in Ede, demonstrating service invocation, pub/sub messaging, and state management."
 date: 2023-10-12
 ---
 

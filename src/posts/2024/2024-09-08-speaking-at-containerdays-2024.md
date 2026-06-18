@@ -1,7 +1,7 @@
 ---
 title: "Speaking at ContainerDays 2024"
 permalink: "/articles/speaking-at-containerdays-2024/"
-description: ""
+description: "My ContainerDays 2024 session introducing the Dapr OSS project, with demos of service invocation, state management, pub/sub, and built-in resiliency."
 date: 2024-09-08
 ---
 

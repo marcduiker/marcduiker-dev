@@ -1,7 +1,7 @@
 ---
 title: "Creating Azure Functions University, an open source educational project"
 permalink: "/articles/azure-functions-university/"
-description: ""
+description: "The story behind Azure Functions University, a free open source project teaching serverless Azure Functions through GitHub lessons and YouTube videos."
 date: 2021-04-27
 ---
 

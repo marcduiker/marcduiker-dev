@@ -1,6 +1,6 @@
 ---
 title: "Speaking at NDC Copenhagen 2025"
-description: ""
+description: "Recap of NDC Copenhagen 2025, with an async messaging deep dive into Dapr pub/sub, presented from VSCode using DemoTime and audience polls via EngageTime."
 date: 2025-09-12
 ---
 

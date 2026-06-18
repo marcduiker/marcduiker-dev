@@ -1,7 +1,7 @@
 ---
 title: "Speaking at Swetugg Stockholm 2024"
 permalink: "/articles/speaking-at-swetugg-stockholm-2024/"
-description: ""
+description: "My Swetugg Stockholm 2024 session on serverless Dapr, covering Dapr deployment models and a demo of Diagrid Catalyst for communication, data, and workflow."
 date: 2024-02-07
 ---
 

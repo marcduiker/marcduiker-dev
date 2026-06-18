@@ -1,7 +1,7 @@
 ---
 title: "Live stream with Gregor Suttie"
 permalink: "/articles/live-stream-gregor-suttie/"
-description: ""
+description: "A live stream with Azure MVP Gregor Suttie demonstrating Dapr, including the State Management API, resiliency, and Dapr Workflow in action."
 date: 2023-07-18
 ---
 

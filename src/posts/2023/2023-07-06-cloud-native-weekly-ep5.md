@@ -1,7 +1,7 @@
 ---
 title: "Cloud Native Weekly Episode 5: Dapr"
 permalink: "/articles/cloud-native-weekly-ep5/"
-description: ""
+description: "Recap of guesting on Cloud Native Weekly Episode 5, a YouTube live show, discussing Dapr, the Distributed Application Runtime, and cloud native trends."
 date: 2023-07-06
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - HTTP Lesson (.NET 6)"
 permalink: "/articles/azfuncuni-http-lesson-dotnet6/"
-description: ""
+description: "Learn to build HTTP-triggered Azure Functions in .NET 6, handling GET and POST requests with string and JSON data, custom routes, and responses."
 date: 2022-01-03
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - HTTP Lesson (PowerShell via Portal)"
 permalink: "/articles/azfuncuni-http-lesson-powershell-portal/"
-description: ""
+description: "Learn how to build HTTP triggered PowerShell Azure Functions directly in the Azure Portal, handling GET and POST requests and custom routes."
 date: 2021-10-24
 ---
 

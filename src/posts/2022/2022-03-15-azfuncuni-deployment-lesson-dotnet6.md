@@ -1,7 +1,7 @@
 ---
 title: "Azure Functions University - Deployment Lesson (.NET 6)"
 permalink: "/articles/azfuncuni-deployment-lesson-dotnet6/"
-description: ""
+description: "Learn how to deploy Azure Functions in .NET 6 using VSCode, the Azure CLI, the Functions CLI, and GitHub Actions, plus the Azure resources involved."
 date: 2022-03-15
 ---
 

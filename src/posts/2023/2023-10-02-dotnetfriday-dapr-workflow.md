@@ -1,7 +1,7 @@
 ---
 title: "Speaking at DotNetFriday about Dapr Workflow"
 permalink: "/articles/dotnetfriday-dapr-workflow/"
-description: ""
+description: "A recap of speaking at DotNetFriday about orchestrating business logic with Dapr Workflow, including demos, slides, and a GitHub repo."
 date: 2023-10-02
 ---
 

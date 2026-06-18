@@ -1,7 +1,7 @@
 ---
 title: "Sponsoring Techorama NL 2024"
 permalink: "/articles/sponsoring-techorama-nl-2024/"
-description: ""
+description: "Recap of Diagrid sponsoring the fun fair themed Techorama Netherlands 2024, featuring a pixelart Dapr sidecar photo booth and the retro Dapr game."
 date: 2024-10-08
 ---
 

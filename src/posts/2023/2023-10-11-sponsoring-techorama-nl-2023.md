@@ -1,7 +1,7 @@
 ---
 title: "Sponsoring Techorama NL and (re-)connecting with the community ❤️"
 permalink: "/articles/sponsoring-techorama-nl-2023/"
-description: ""
+description: "Sponsoring Techorama NL 2023 for Diagrid, talking to developers about Dapr, and building a giant Lego microservices application at the booth."
 date: 2023-10-11
 ---
 

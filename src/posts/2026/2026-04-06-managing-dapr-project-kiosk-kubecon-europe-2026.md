@@ -1,6 +1,6 @@
 ---
 title: "Managing the Dapr Project Kiosk at KubeCon Europe 2026"
-description: ""
+description: "Recap of managing the Dapr project kiosk at KubeCon Europe 2026, with strong community interest, the Dapr Agents GA, and many great conversations."
 date: 2026-04-06
 ---
 

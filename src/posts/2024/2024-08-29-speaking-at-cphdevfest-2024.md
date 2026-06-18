@@ -1,7 +1,7 @@
 ---
 title: "Speaking at Copenhagen Developers Festival 2024"
 permalink: "/articles/speaking-at-cphdevfest-2024/"
-description: ""
+description: "My Copenhagen Developers Festival 2024 session on durable execution with Dapr, demonstrating Dapr Workflow patterns and resiliency policies."
 date: 2024-08-29
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Speaking at Update Conference Krakow 2026"
-description: ""
+description: "Recap of Update Conference Krakow 2026, building reliable agentic AI systems with Dapr Workflow and the LLM Conversation API using durable execution."
 date: 2026-05-28
 ---
 

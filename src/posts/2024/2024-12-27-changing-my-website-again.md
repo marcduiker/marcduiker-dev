@@ -1,6 +1,6 @@
 ---
 title: "Changing my website tech stack (again)"
-description: ""
+description: "Why I rebuilt my website on Eleventy with the Eleventy Excellent template, plus lessons on choosing a static site generator and migrating content."
 date: 2024-12-27
 ---
 

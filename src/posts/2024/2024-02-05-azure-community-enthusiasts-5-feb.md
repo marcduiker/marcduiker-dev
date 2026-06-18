@@ -1,7 +1,7 @@
 ---
 title: "Azure Community Enthusiasts: Dapr"
 permalink: "/articles/azure-community-enthusiasts-5-feb/"
-description: ""
+description: "Recap of my guest session on Dapr, the Distributed Application Runtime, at the Azure Community Enthusiasts live YouTube show, with a video recording."
 date: 2024-02-05
 ---
 
