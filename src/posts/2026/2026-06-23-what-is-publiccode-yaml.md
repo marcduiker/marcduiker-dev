@@ -4,25 +4,27 @@ description: "Exploring the publiccode.yml standard that helps public administra
 date: 2026-06-23
 ---
 
-**TLDR:** `publiccode.yaml` (or `publiccode.yml`) is a metadata standard in YAML format that describes software created by or for public administrations. Placed in the root of a repository, it makes public software easily discoverable and reusable by both humans and machines. It's mandatory for all public software in Italy and is gaining adoption across Europe, including in the Netherlands and Germany.
+**TLDR:** `publiccode.yaml` is a metadata standard in YAML format that describes software created by or for public administrations. Placed in the root of a repository, it makes public software easily discoverable and reusable by both humans and machines.
 
 ---
 
-Public administrations around the world create valuable software every day. However, the reuse of this software is often limited, not because of technical barriers, but because of poor discoverability and a lack of understanding about whether a project fits another administration's context. This is where `publiccode.yaml` comes in.
+Last week I attended a meetup of [developer.overheid.nl](https://developer.overheid.nl/) and during one of the sessions I saw `publiccode.yaml` mentioned in several repositories. Since I didn't know what `publiccode.yaml` was, I decided to look into it.
 
 ## What is publiccode.yaml?
 
-`publiccode.yaml` is a **metadata standard** designed specifically for software developed by or for public administrations. It's a simple YAML file that you place in the root directory of your repository. This file contains structured information about your software project, making it easy for both humans and machines to understand what the software does, who maintains it, and whether it might be suitable for reuse in other contexts.
+My initial thought was that `publiccode.yaml` could be a way to standardize metadata for public open source software projects, making them more discoverable and reusable. But it turned out to be slightly different from what I expected.
+
+`publiccode.yaml` is a **metadata standard** designed specifically for software developed by or for **public administrations**. It's a YAML file that is placed in the root directory of the repository. The file contains structured information about the software project, making it easy for both humans and machines to understand what the software does, who maintains it, and whether it might be suitable for reuse in other contexts.
 
 The standard was developed as an open collaboration and is maintained by the [publiccodeyml community](https://github.com/publiccodeyml/publiccode.yml) on GitHub. It's designed to be:
 
 - **Human-readable** - Easy for civil servants, developers, and decision-makers to understand
 - **Machine-readable** - Structured data that can be automatically processed and indexed
 - **Platform-agnostic** - Works regardless of whether you use GitHub, GitLab, Codeberg, or any other Git platform
-- **Extensible** - Can grow as your project evolves
+- **Extensible** - Can grow as the project evolves
 - **International** - Designed for global use with support for country-specific extensions
 
-## The Structure of a publiccode.yaml File
+## The structure of a publiccode.yaml file
 
 A `publiccode.yaml` file contains various sections that describe different aspects of the software. Here's what a typical file looks like:
 
@@ -72,79 +74,23 @@ intendedAudience:
     - government
 ```
 
-### Core Sections
+For the full schema description, see [yml.publiccode.tools](https://yml.publiccode.tools/schema.core.html).
 
-The standard defines several key sections:
-
-- **`publiccodeYmlVersion`** - The version of the publiccode.yml specification being used
-- **`name`** - The name of the project or product
-- **`url`** - The URL to the source code repository
-- **`landingURL`** - The URL to the production/running instance (optional)
-- **`softwareType`** - The type of software (e.g., standalone/web, standalone/desktop, library, etc.)
-- **`platforms`** - The platforms on which the software is intended to run (e.g., web, windows, linux, ios, android)
-- **`developmentStatus`** - The current development state (concept, development, beta, stable, obsolete, deprecated)
-- **`description`** - Detailed description of the project in one or more languages, including short description, long description, and features
-- **`legal`** - Legal information including license (using SPDX identifiers) and copyright owner
-- **`maintenance`** - Information about who maintains the software and how
-- **`localisation`** - Information about available languages and localization readiness
-- **`intendedAudience`** - The target audience including countries and scope (e.g., government, education, healthcare)
-- **`categories`** - Tags that describe what the software does, from a predefined list
-- **`dependencies`** - Information about the software's dependencies
-- **`keywords`** - Additional keywords for better discoverability
-
-## Why Public Administrations Are Using It
+## Why public administrations are using it
 
 The adoption of `publiccode.yaml` by public administration organizations is driven by several compelling benefits:
 
-### 1. Enhanced Discoverability
+**Enhanced Discoverability:** Without proper metadata, finding relevant open source software can be difficult; publiccode.yaml provides a standardized way to describe software, with public administrations like Italy (via [Developers Italia](https://developers.italia.it/)), Germany (via [opencode.de](https://opencode.de)), and the Netherlands (via [developer.overheid.nl](https://developer.overheid.nl)) using it to build comprehensive catalogs.
 
-Without proper metadata, finding relevant open source software from public administrations can be like looking for a needle in a haystack. `publiccode.yaml` provides a standardized way to describe software, making it easy for search engines and catalogs to index and retrieve relevant projects.
+**Better Decision Making:** It provides comprehensive information—clear descriptions, development status, maintenance details, legal information, and technical specifications—that allows non-technical stakeholders to quickly assess whether a software project might be suitable for their needs.
 
-Public administrations can crawl repositories looking for `publiccode.yaml` files and build comprehensive catalogs of available software. For example:
+**Platform Independence:** Since publiccode.yaml is a file in the repository, it's part of the codebase and moves with it wherever you host your code, unlike platform-specific metadata.
 
-- **Italy**: The [Developers Italia](https://developers.italia.it/) portal uses publiccode.yaml to build the national software catalog
-- **Germany**: [opencode.de](https://opencode.de) is the German registry of open source for public administration
-- **Netherlands**: [developer.overheid.nl](https://developer.overheid.nl) uses it for their open source catalog
+**Standardization and Interoperability:** It provides a common language for public administrations worldwide to describe their software, while allowing for country-specific extensions.
 
-### 2. Better Decision Making
+**Support for Open Source Policies:** It enables governments to find existing solutions before building new ones, provides the information needed to assess software quality, and supports transparency in software procurement.
 
-When evaluating whether to reuse existing software or build something new, decision-makers need comprehensive information. `publiccode.yaml` provides:
-
-- **Clear description** of what the software does
-- **Development status** to assess maturity and stability
-- **Maintenance information** to understand support arrangements
-- **Legal information** to verify compliance with licensing requirements
-- **Technical details** like platforms and dependencies
-
-This allows non-technical stakeholders to quickly assess whether a software project might be suitable for their needs.
-
-### 3. Platform Independence
-
-Many Git hosting platforms (GitHub, GitLab, etc.) have their own ways of storing project metadata. The problem is that this metadata doesn't travel with the code when you migrate to a different platform. Since `publiccode.yaml` is a file in your repository, it's part of your codebase and moves with it wherever you host your code.
-
-### 4. Standardization and Interoperability
-
-Before `publiccode.yaml`, different governments and organizations used various formats and approaches to describe their software. This lack of standardization made it difficult to share and discover software across borders. The standard provides a common language that public administrations worldwide can use to describe their software.
-
-The standard is designed to be **internationally interoperable** while allowing for **country-specific extensions**. Each country can define additional sections that are relevant to their local context, such as compliance with local laws and regulations.
-
-### 5. Support for Open Source Policies
-
-Many governments have policies that encourage or mandate the reuse of open source software. `publiccode.yaml` supports these policies by:
-
-- Making it easier to find existing solutions before building new ones
-- Providing the information needed to assess software quality and suitability
-- Enabling the creation of national and international software catalogs
-- Supporting transparency and accountability in software procurement
-
-### 6. Facilitating Collaboration
-
-By providing clear information about who maintains the software and how to contact them, `publiccode.yaml` makes it easier for different administrations to collaborate. Potential contributors can quickly identify:
-
-- Who to contact for questions or contributions
-- Whether the project is actively maintained
-- What the project's development status is
-- What programming languages and platforms are used
+**Facilitating Collaboration:** It makes it easier for different administrations to collaborate by clearly identifying maintainers, project status, and technical details.
 
 ## Adoption Across Europe
 
