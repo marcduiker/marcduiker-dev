@@ -1,22 +1,25 @@
 ---
-title: "What is publiccode.yaml?"
+title: "What is publiccode.yml?"
 description: "Exploring the publiccode.yml standard that helps public administrations make their software discoverable and reusable."
 date: 2026-06-23
+draft: true
 ---
 
-**TLDR:** `publiccode.yaml` is a metadata standard in YAML format that describes software created by or for public administrations. Placed in the root of a repository, it makes public software easily discoverable and reusable by both humans and machines.
+**TLDR:** `publiccode.yml` is a metadata standard in YAML format that describes software created by or for public administrations. Placed in the root of a repository, it makes public software easily discoverable and reusable by both humans and machines.
 
 ---
 
-Last week I attended a meetup of [developer.overheid.nl](https://developer.overheid.nl/) and during one of the sessions I saw `publiccode.yaml` mentioned in several repositories. Since I didn't know what `publiccode.yaml` was, I decided to look into it.
+Last week I attended a meetup of [developer.overheid.nl](https://developer.overheid.nl/) and during one of the sessions I saw `publiccode.yml` files in several repositories. Since I didn't know what `publiccode.yml` was, I decided to look into it.
 
-## What is publiccode.yaml?
+## What is publiccode.yml?
 
-My initial thought was that `publiccode.yaml` could be a way to standardize metadata for public open source software projects, making them more discoverable and reusable. But it turned out to be slightly different from what I expected.
+My initial thought was that `publiccode.yml` could be a way to standardize metadata for public open source software projects, making them more discoverable and reusable. But it turned out to be slightly different from what I expected.
 
-`publiccode.yaml` is a **metadata standard** designed specifically for software developed by or for **public administrations**. It's a YAML file that is placed in the root directory of the repository. The file contains structured information about the software project, making it easy for both humans and machines to understand what the software does, who maintains it, and whether it might be suitable for reuse in other contexts.
+`publiccode.yml` is a **metadata standard** designed specifically for software developed by or for **public administrations**. It's a YAML file that is placed in the root directory of the repository. The file contains structured information about the software project, making it easy for both humans and machines to understand what the software does, who maintains it, and whether it might be suitable for reuse in other contexts.
 
-The standard was developed as an open collaboration and is maintained by the [publiccodeyml community](https://github.com/publiccodeyml/publiccode.yml) on GitHub. It's designed to be:
+The standard is developed as an open collaboration across public administrations and is governed by the [publiccode.yml Working Group Charter](https://github.com/publiccodeyml/publiccode.yml/blob/main/governance/charter.md). A steering committee consisting of public administration representatives oversees its development and maintenance.
+
+`publiccode.yml` is designed to be:
 
 - **Human-readable** - Easy for civil servants, developers, and decision-makers to understand
 - **Machine-readable** - Structured data that can be automatically processed and indexed
@@ -24,9 +27,9 @@ The standard was developed as an open collaboration and is maintained by the [pu
 - **Extensible** - Can grow as the project evolves
 - **International** - Designed for global use with support for country-specific extensions
 
-## The structure of a publiccode.yaml file
+## The structure of a publiccode.yml file
 
-A `publiccode.yaml` file contains various sections that describe different aspects of the software. Here's what a typical file looks like:
+A `publiccode.yml` file contains various sections that describe different aspects of the software. Here's what a typical file looks like:
 
 ```yaml
 publiccodeYmlVersion: "0.5"
@@ -78,13 +81,13 @@ For the full schema description, see [yml.publiccode.tools](https://yml.publicco
 
 ## Why public administrations are using it
 
-The adoption of `publiccode.yaml` by public administration organizations is driven by several compelling benefits:
+The adoption of `publiccode.yml` by public administration organizations is driven by several compelling benefits:
 
-**Enhanced Discoverability:** Without proper metadata, finding relevant open source software can be difficult; publiccode.yaml provides a standardized way to describe software, with public administrations like Italy (via [Developers Italia](https://developers.italia.it/)), Germany (via [opencode.de](https://opencode.de)), and the Netherlands (via [developer.overheid.nl](https://developer.overheid.nl)) using it to build comprehensive catalogs.
+**Enhanced Discoverability:** Without proper metadata, finding relevant open source software can be difficult; publiccode.yml provides a standardized way to describe software, with public administrations like Italy (via [Developers Italia](https://developers.italia.it/)), Germany (via [opencode.de](https://opencode.de)), and the Netherlands (via [developer.overheid.nl](https://developer.overheid.nl)) using it to build comprehensive catalogs.
 
 **Better Decision Making:** It provides comprehensive information—clear descriptions, development status, maintenance details, legal information, and technical specifications—that allows non-technical stakeholders to quickly assess whether a software project might be suitable for their needs.
 
-**Platform Independence:** Since publiccode.yaml is a file in the repository, it's part of the codebase and moves with it wherever you host your code, unlike platform-specific metadata.
+**Platform Independence:** Since publiccode.yml is a file in the repository, it's part of the codebase and moves with it wherever you host your code, unlike platform-specific metadata.
 
 **Standardization and Interoperability:** It provides a common language for public administrations worldwide to describe their software, while allowing for country-specific extensions.
 
@@ -94,7 +97,7 @@ The adoption of `publiccode.yaml` by public administration organizations is driv
 
 ## Adoption Across Europe
 
-The `publiccode.yaml` standard is gaining significant traction across Europe:
+The `publiccode.yml` standard is gaining traction across Europe:
 
 - **Italy**: Mandatory for all public software, with a [national catalog](https://developers.italia.it/) built on it
 - **Netherlands**: Recommended standard for open source projects on [developer.overheid.nl](https://developer.overheid.nl)
@@ -105,21 +108,21 @@ The standard is also being considered by other countries and is designed to supp
 
 ## Tooling and Ecosystem
 
-A growing ecosystem of tools supports the `publiccode.yaml` standard:
+A growing ecosystem of tools supports the `publiccode.yml` standard:
 
 - **[publiccode-parser-go](https://github.com/italia/publiccode-parser-go)** - Reference Go parser and validator
 - **[publiccode-crawler](https://github.com/italia/publiccode-crawler)** - Crawls repositories to discover and collect descriptor files
-- **[publiccode-editor](https://publiccode-editor.developers.italia.it/)** - User-friendly web editor for creating and validating publiccode.yaml files
+- **[publiccode-editor](https://publiccode-editor.developers.italia.it/)** - User-friendly web editor for creating and validating publiccode.yml files
 - **[publiccode-parser-action](https://github.com/italia/publiccode-parser-action)** - GitHub Action for validation
 - **[JSON Schema on SchemaStore](https://github.com/SchemaStore/schemastore/blob/master/src/schemas/json/publiccode.json)** - For IDE support and validation
 
 There are also various country-specific implementations and tools that build on the standard.
 
-## Getting Started with publiccode.yaml
+## Getting Started with publiccode.yml
 
-Adding `publiccode.yaml` to your project is straightforward:
+Adding `publiccode.yml` to your project is straightforward:
 
-1. **Create the file**: Add a `publiccode.yaml` (or `publiccode.yml`) file to the root of your repository
+1. **Create the file**: Add a `publiccode.yml` (or `publiccode.yml`) file to the root of your repository
 2. **Fill in the metadata**: Start with the required fields and add more as your project matures
 3. **Validate**: Use one of the available validators to check your file
 4. **Publish**: Commit the file to your repository
@@ -142,11 +145,11 @@ For a more guided experience, you can use the [publiccode.yml editor](https://pu
 
 ## Conclusion
 
-`publiccode.yaml` is more than just a metadata file—it's a **catalyst for change** in how public administrations develop, share, and reuse software. By providing a standardized, machine-readable way to describe public software, it addresses the key barriers to software reuse: discoverability and understanding.
+`publiccode.yml` is more than just a metadata file—it's a **catalyst for change** in how public administrations develop, share, and reuse software. By providing a standardized, machine-readable way to describe public software, it addresses the key barriers to software reuse: discoverability and understanding.
 
 As more public administrations adopt the standard, we're seeing the emergence of truly interoperable software ecosystems where solutions can be discovered and reused across organizational and national boundaries. This not only saves money by avoiding duplicate development but also leads to better software through wider use and contribution.
 
-Whether you're a developer working in the public sector, a civil servant responsible for software procurement, or simply someone interested in open source and government transparency, `publiccode.yaml` is a standard worth understanding and adopting.
+Whether you're a developer working in the public sector, a civil servant responsible for software procurement, or simply someone interested in open source and government transparency, `publiccode.yml` is a standard worth understanding and adopting.
 
 ---
 
@@ -154,7 +157,7 @@ Whether you're a developer working in the public sector, a civil servant respons
 
 - [publiccode.yml Standard Website](https://yml.publiccode.tools/)
 - [GitHub Repository](https://github.com/publiccodeyml/publiccode.yml)
-- [Developer.overheid.nl - publiccode.yml](https://developer.overheid.nl/kennisbank/open-source/standaarden/publiccode-yml)
+- [publiccode.yml standard in the Dutch government developer portal](https://developer.overheid.nl/kennisbank/open-source/standaarden/publiccode-yml)
 - [Interoperable Europe - publiccode.yml Standard](https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/publiccodeyml-standard)
 - [publiccode.yml Editor](https://publiccode-editor.developers.italia.it/)
 - [Italy's Developers Portal](https://developers.italia.it/)
