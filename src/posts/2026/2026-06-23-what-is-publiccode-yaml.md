@@ -183,7 +183,7 @@ A growing ecosystem of tools supports the `publiccode.yml` standard, developed a
 - **[publiccode-issueopener](https://github.com/italia/publiccode-issueopener)** - Opens GitHub issues to repos in a software catalog with invalid publiccode.yml files.
 - **[JSON Schema on SchemaStore](https://github.com/SchemaStore/schemastore/blob/master/src/schemas/json/publiccode.json)** - JSON Schema definition mainly used by editors and IDEs for coarse validation and autocompletion.
 
-## Conclusion
+## Let's use it!
 
 I'm a big fan of open source and open standards, and I think `publiccode.yml` is a great example of both. It provides a simple yet powerful way to describe software projects in a standardized format, making them more discoverable and reusable across public administrations.
 
