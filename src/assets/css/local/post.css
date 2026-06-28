@@ -3,11 +3,11 @@
 }
 
 :where(.post) h2 {
-  font-size: var(--size-step-3);
+  font-size: calc(var(--size-step-3) * 0.8);
 }
 
 :where(.post) h3 {
-  font-size: var(--size-step-2);
+  font-size: calc(var(--size-step-2) * 0.8);
 }
 
 .post h1 + :is(picture, figure) img {
