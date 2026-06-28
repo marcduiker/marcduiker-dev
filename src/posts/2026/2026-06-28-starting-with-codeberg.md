@@ -1,12 +1,12 @@
 ---
 title: "Getting Started with Codeberg"
-description: "A practical guide to registering on Codeberg.org and mirroring an existing GitHub repository."
+description: "A practical introduction to Codeberg.org and mirroring an existing GitHub repository."
 date: 2026-06-28
 ---
 
-# Getting Started with Codeberg
-
 **TLDR:** Do you also want to reduce your dependency on non-EU-based tech platforms? Start with a free and open source Git provider! Sign up for Codeberg, create a new empty repo and push your code from an existing GitHub clone to mirror it.
+
+---
 
 ## Introduction
 
