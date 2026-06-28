@@ -25,7 +25,7 @@
   img { max-width: 100%; }
 
   #bg { position: absolute; top: 0; left: 0; z-index: 0; pointer-events: none; }
-  .iso-nav, .iso-hero, .iso-sec, .iso-foot, .article, .page-content, .page-hero, .page-section, .articles-index { position: relative; z-index: 2; }
+  .iso-nav, .iso-hero, .iso-sec, .iso-foot, .article, .page-content, .page-hero, .page-section { position: relative; z-index: 2; }
 
   /* ---------- nav ---------- */
   .iso-nav {
@@ -34,9 +34,8 @@
   }
   .iso-nav .logo { font-family: var(--font-slab); font-weight: 700; font-size: 1.1rem; letter-spacing: -.02ch; text-decoration: none; }
   .iso-nav .logo .dot { color: var(--gold); }
-  .iso-nav .logo img { height: 3rem; }
   .iso-nav nav { display: flex; gap: 1.3rem; margin-left: auto; flex-wrap: wrap; }
-  .iso-nav nav a { text-decoration: none; font-size: 1.025rem; font-weight: 500; color: var(--g600); text-transform: uppercase; letter-spacing: .06ch; }
+  .iso-nav nav a { text-decoration: none; font-size: .82rem; font-weight: 500; color: var(--g600); text-transform: uppercase; letter-spacing: .06ch; }
   .iso-nav nav a:hover, .iso-nav nav a.active { color: var(--blue); }
 
   /* ---------- hero ---------- */
@@ -84,7 +83,6 @@
   .card:hover { transform: translate(-3px,-3px); box-shadow: 12px 12px 0 var(--blue); }
   .card .knum { font-family: var(--font-mono); font-size: .72rem; color: var(--gold-dk); letter-spacing: .1ch; }
   .card h3 { font-family: var(--font-slab); font-size: 1.2rem; margin: 0; line-height: 1.15; }
-  .card .desc { font-size: .9rem; color: var(--g600); margin: 0 0 .4rem; line-height: 1.4; }
   .card .m { font-family: var(--font-mono); font-size: .72rem; color: var(--g500); font-variant-numeric: tabular-nums; }
   .card .m b { color: var(--blue-dk); font-weight: 400; }
 
@@ -196,7 +194,7 @@
   .pager .card { background: var(--paper); }
 
   /* ============================================================
-     PAGE CONTENT (About, Articles Index)
+     PAGE CONTENT (About, Pixel Art, Generative Art)
      ============================================================ */
   .page-content {
     width: min(988px, calc(100% - 2.8rem));
@@ -233,16 +231,9 @@
   .page-content .lead { font-size: 1.25rem; line-height: 1.55; color: var(--g600); margin: 0 0 1rem; }
   .page-content .hr-rule { height: 3px; background: var(--ink); margin: 1.8rem 0 2rem; }
 
-  /* Articles Index Page */
-  .articles-index {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 1.5rem 1.4rem;
-  }
-
-  /* Page Section - for H2 as articles, now matching homepage width */
+  /* Page Section - for H2 as articles */
   .page-section {
-    width: min(1160px, calc(100% - 2.8rem));
+    width: min(988px, calc(100% - 2.8rem));
     margin: 0 auto 1.5rem;
     padding: 1.8rem 2.2rem 2rem;
     background: #fff;
@@ -344,9 +335,9 @@
 <!-- ===================== HOME ===================== -->
 <div id="page-home">
   <div class="iso-nav">
-    <a class="logo" href="#" data-view="home"><img src="../../src/assets/images/main/marcduiker_name_anim.gif" alt="Marc Duiker"></a>
+    <a class="logo" href="#" data-view="home">Marc Duiker<span class="dot">.</span></a>
     <nav>
-      <a href="#" class="active" data-view="articles">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
+      <a href="#" class="active" data-view="article">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
     </nav>
   </div>
 
@@ -359,7 +350,7 @@
   <section class="iso-sec">
     <div class="iso-sechead">
       <h2><a href="#" style="text-decoration:none;color:inherit">Latest Articles</a></h2>
-      <a href="#" class="arrow" data-view="articles" aria-label="All articles">→</a>
+      <a href="#" class="arrow" data-view="article" aria-label="All articles">→</a>
       <span class="rule"></span>
     </div>
     <div class="cards">
@@ -398,44 +389,17 @@
   <div class="iso-pad"></div>
 </div>
 
-<!-- ===================== ARTICLES INDEX ===================== -->
-<div id="page-articles" style="display:none">
-  <div class="iso-nav">
-    <a class="logo" href="#" data-view="home"><img src="src/assets/images/main/marcduiker_name_anim.gif" alt="Marc Duiker"></a>
-    <nav>
-      <a href="#" class="active" data-view="articles">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
-    </nav>
-  </div>
-
-  <header class="page-hero">
-    <span class="badge">Developer Experience</span>
-    <h1>I <span class="heart">❤</span> sharing <span class="hl">knowledge</span> with the community.</h1>
-    <p>Articles about open source, cloud technologies, and creative coding.</p>
-  </header>
-
-  <div class="articles-index">
-    <div class="cards" id="articles-list"></div>
-  </div>
-
-  <footer class="iso-foot">
-    <span>Built in the open · <b>marcduiker.dev</b></span>
-    <span><a href="#" data-view="home" style="text-decoration:none;color:inherit">Back to home</a></span>
-    <span>&copy; 2026 <b>Marc Duiker</b></span>
-  </footer>
-  <div class="iso-pad"></div>
-</div>
-
 <!-- ===================== ARTICLE DETAIL ===================== -->
 <div id="page-article" style="display:none">
   <div class="iso-nav">
-    <a class="logo" href="#" data-view="home"><img src="src/assets/images/main/marcduiker_name_anim.gif" alt="Marc Duiker"></a>
+    <a class="logo" href="#" data-view="home">Marc Duiker<span class="dot">.</span></a>
     <nav>
-      <a href="#" class="active" data-view="articles">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
+      <a href="#" class="active" data-view="article">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
     </nav>
   </div>
 
   <article class="article">
-    <a class="back" href="#" data-view="articles">← All articles</a>
+    <a class="back" href="#" data-view="home">← All articles</a>
     <div class="ameta">
       <span class="tag">OSS</span>
       <span>2026.06.24</span><span class="dot"></span>
@@ -472,14 +436,16 @@
       <h2>The structure of a publiccode.yml file</h2>
       <p>A <code>publiccode.yml</code> file contains various sections that describe different aspects of the software.</p>
 
-      <p>Here's a real example of a <code>publiccode.yml</code> file:</p>
+      <p>Here's a real example of a <code>publiccode.yml</code> file that is used to describe the <a href="https://github.com/MinBZK/nl-wallet">NL Wallet</a> project:</p>
 
       <pre class="code"><span class="c"># publiccode.yml for NL Wallet</span>
 <span class="k">publiccodeYmlVersion</span>: <span class="s">"0.5.0"</span>
 
 <span class="k">name</span>: <span class="s">NL Wallet</span>
 <span class="k">url</span>: <span class="s">https://github.com/MinBZK/nl-wallet</span>
+<span class="k">landingURL</span>: <span class="s">https://minbzk.github.io/nl-wallet/</span>
 <span class="k">softwareType</span>: <span class="s">standalone/mobile</span>
+<span class="k">developmentStatus</span>: <span class="s">development</span>
 
 <span class="k">platforms</span>:
   - <span class="s">android</span>
@@ -490,28 +456,97 @@
   - <span class="s">digital-citizenship</span>
 
 <span class="k">description</span>:
+  <span class="k">nl</span>:
+    <span class="k">shortDescription</span>: <span class="s">Een veilige digitale wallet voor Nederlandse burgers...</span>
+    <span class="k">features</span>:
+      - <span class="s">Digitale opslag van identiteitsdocumenten</span>
+      - <span class="s">Selectieve attribuutdeling</span>
   <span class="k">en</span>:
     <span class="k">shortDescription</span>: <span class="s">A secure digital wallet for Dutch nationals...</span>
+    <span class="k">features</span>:
+      - <span class="s">Digital storage of identity documents</span>
+      - <span class="s">Selective attribute disclosure</span>
 
 <span class="k">legal</span>:
   <span class="k">license</span>: <span class="s">EUPL-1.2</span>
 
 <span class="k">maintenance</span>:
-  <span class="k">type</span>: <span class="s">internal</span></pre>
+  <span class="k">type</span>: <span class="s">internal</span>
+  <span class="k">contacts</span>:
+    - <span class="k">name</span>: <span class="s">Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</span>
+      <span class="k">email</span>: <span class="s">edi@minbzk.nl</span>
+
+<span class="k">intendedAudience</span>:
+  <span class="k">countries</span>:
+    - <span class="s">NL</span>
+
+<span class="k">localisation</span>:
+  <span class="k">localisationReady</span>: <span class="s">true</span>
+  <span class="k">availableLanguages</span>:
+    - <span class="s">nl</span>
+    - <span class="s">en</span></pre>
 
       <p>For the full schema description, see <a href="https://yml.publiccode.tools/schema.core.html">yml.publiccode.tools</a>.</p>
 
       <h2>Why public administrations are using it</h2>
+      <p>The adoption of <code>publiccode.yml</code> by public administration organizations is driven by several compelling benefits:</p>
+
+      <p><strong>Enhanced Discoverability:</strong> Without proper metadata, finding relevant open source software can be difficult; publiccode.yml provides a standardized way to describe software, with public administrations like Italy (via <a href="https://developers.italia.it/">Developers Italia</a>), Germany (via <a href="https://opencode.de">opencode.de</a>), and the Netherlands (via <a href="https://developer.overheid.nl">developer.overheid.nl</a>) using it to build comprehensive catalogs.</p>
+
+      <p><strong>Better Decision Making:</strong> It provides clear descriptions, development status, maintenance details, legal information, and technical specifications that allows non-technical stakeholders to quickly assess whether a software project might be suitable for their needs.</p>
+
+      <p><strong>Platform Independence:</strong> Since <code>publiccode.yml</code> is a file in the repository, it's part of the codebase and moves with it wherever you host your code, unlike platform-specific metadata.</p>
+
+      <p><strong>Standardization and Interoperability:</strong> It provides a common language for public administrations worldwide to describe their software, while allowing for country-specific extensions.</p>
+
+      <p><strong>Support for Open Source Policies:</strong> It enables governments to find existing solutions before building new ones, provides the information needed to assess software quality, and supports transparency in software procurement.</p>
+
+      <p><strong>Facilitating Collaboration:</strong> It makes it easier for different administrations to collaborate by clearly identifying maintainers, project status, and technical details.</p>
 
       <blockquote>
         If it is public money, it should be public code as well.
         <cite>— the Public Money, Public Code campaign</cite>
       </blockquote>
 
+      <h2>Adoption Across Europe</h2>
+      <p>The <code>publiccode.yml</code> standard is gaining traction across Europe:</p>
+      <ul>
+        <li><strong>Italy:</strong> Mandatory for all public software, with a <a href="https://developers.italia.it/">national catalog</a> built on it</li>
+        <li><strong>Netherlands:</strong> Recommended standard for open source projects on <a href="https://developer.overheid.nl">developer.overheid.nl</a></li>
+        <li><strong>Germany:</strong> Used by <a href="https://opencode.de">opencode.de</a>, the national open source registry</li>
+        <li><strong>European Union:</strong> Recognized by the <a href="https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor">Open Source Observatory (OSOR)</a> and included in the <a href="https://interoperable-europe.ec.europa.eu/eu-oss-catalogue">EU Open Source Solutions Catalogue</a></li>
+      </ul>
+
+      <h2>Tooling and Ecosystem</h2>
+      <p>A growing ecosystem of tools supports the <code>publiccode.yml</code> standard, developed alongside the specification as reference implementations:</p>
+      <ul>
+        <li><a href="https://github.com/italia/publiccode-parser-go">publiccode-parser-go</a> - Go parser and validator. Reference implementation of the specification.</li>
+        <li><a href="https://github.com/bfabio/publiccode-parser-php">publiccode-parser-php</a> - PHP library for parsing and validation</li>
+        <li><a href="https://github.com/italia/publiccode-crawler">publiccode-crawler</a> - Crawler to discover and collect descriptor files for catalogs</li>
+        <li><a href="https://github.com/italia/developers-italia-api">software-catalog-api</a> - RESTful API powering software catalogs</li>
+        <li><a href="https://github.com/bfabio/publiccode-api-client">publiccode-api-client</a> - Command-line client for the catalog API</li>
+        <li><a href="https://github.com/italia/publiccode-parser-action">publiccode-parser-action</a> - GitHub Action for validation</li>
+        <li><a href="https://github.com/italia/publiccode-validator-api">publiccode-validator-api</a> - RESTful API for validating files</li>
+      </ul>
+
+      <h2>Let's use it!</h2>
+      <p>I'm a big fan of open source and open standards, and I think <code>publiccode.yml</code> is a great example of both. It provides a simple yet powerful way to describe software projects in a standardized format, making them more discoverable and reusable across public administrations.</p>
+
+      <p>I hope more public administrations and FOSS developers adopt the standard, and that it continues to evolve to meet the needs of the community. <a href="https://github.com/publiccodeyml/publiccode.yml/discussions/327">Version 0.7</a> was just released today and the maintainers already are working on a <a href="https://github.com/publiccodeyml/publiccode.yml/tree/1.0-rc">1.0 release candidate</a>.</p>
+
+      <p>If you're involved in public sector software development, I encourage you to explore <code>publiccode.yml</code> and consider using it in your projects.</p>
+
+      <hr style="margin: 2rem 0; border: 0; height: 2px; background: var(--ink);" />
+
       <h2>References</h2>
       <ul>
         <li><a href="https://yml.publiccode.tools/">publiccode.yml Standard Website</a></li>
         <li><a href="https://github.com/publiccodeyml/publiccode.yml">GitHub Repository</a></li>
+        <li><a href="https://developer.overheid.nl/kennisbank/open-source/standaarden/publiccode-yml">publiccode.yml standard in the Dutch government developer portal</a></li>
+        <li><a href="https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/publiccodeyml-standard">Interoperable Europe - publiccode.yml Standard</a></li>
+        <li><a href="https://publiccode-editor.developers.italia.it/">publiccode.yml Editor</a></li>
+        <li><a href="https://developers.italia.it/">Italy's Developers Portal</a></li>
+        <li><a href="https://opencode.de">German opencode.de Registry</a></li>
       </ul>
     </div>
 
@@ -544,9 +579,9 @@
 <!-- ===================== PIXEL ART PAGE ===================== -->
 <div id="page-pixel-art" style="display:none">
   <div class="iso-nav">
-    <a class="logo" href="#" data-view="home"><img src="src/assets/images/main/marcduiker_name_anim.gif" alt="Marc Duiker"></a>
+    <a class="logo" href="#" data-view="home">Marc Duiker<span class="dot">.</span></a>
     <nav>
-      <a href="#" data-view="articles">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" class="active" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
+      <a href="#" data-view="article">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" class="active" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
     </nav>
   </div>
 
@@ -566,18 +601,22 @@
 
   <section class="page-section">
     <h2>Games</h2>
-    <p>Some years ago I got interested in Pico8, a fantasy game console for making, sharing, and playing retro games.</p>
+    <p>Some years ago I got interested in Pico8, a fantasy game console for making, sharing, and playing retro games. I made a small game around Azure Functions, which you can play below. I really enjoyed making this game, but it was also a lot of work. I started just doing pixel art with Pico8 and later changed to Aseprite, which is a great tool dedicated for making pixel art.</p>
 
     <div style="background: var(--paper); border: 2.5px solid var(--ink); border-radius: 4px; box-shadow: 6px 6px 0 var(--ink); padding: 1rem; margin: 1.5rem 0;">
-      <iframe src="https://itch.io/embed/542859" width="552" height="167" frameborder="0"><a href="https://marcduiker.itch.io/azure-functions-the-game">Azure Functions, The Game</a></iframe>
+      <iframe src="https://itch.io/embed/542859" width="552" height="167" frameborder="0"><a href="https://marcduiker.itch.io/azure-functions-the-game">Azure Functions, The Game by marcduiker</a></iframe>
     </div>
 
-    <div style="background: var(--paper); border: 2.5px solid var(--ink); border-radius: 4px; box-shadow: 6px 6px 0 var(--ink); padding: 1rem; margin: 1.5rem 0;">
-      <iframe height="167" frameborder="0" src="https://itch.io/embed/1859023" width="552"><a href="https://marcduiker.itch.io/joining-diagrid">Joining Diagrid</a></iframe>
-    </div>
+    <p>Every now and then I still enjoy making a small retro game, such as my announcement to join Diagrid as a Sr Developer Advocate, but most of the time I stick with drawing pixel art, either for my own enjoyment, or when people commission me to design a logo, or draw their online avatar.</p>
 
     <div style="background: var(--paper); border: 2.5px solid var(--ink); border-radius: 4px; box-shadow: 6px 6px 0 var(--ink); padding: 1rem; margin: 1.5rem 0;">
-      <iframe frameborder="0" src="https://itch.io/embed/2163754" width="552" height="167"><a href="https://marcduiker.itch.io/dapr-game">The Dapr Game</a></iframe>
+      <iframe height="167" frameborder="0" src="https://itch.io/embed/1859023" width="552"><a href="https://marcduiker.itch.io/joining-diagrid">Joining Diagrid by marcduiker</a></iframe>
+    </div>
+
+    <p>For KubeCon Paris 2024, I made a Dapr inspired retro game that people played at the Diagrid sponsor booth. The player needs to avoid rogue messages, collect Dapr coins and the Dapr hat, in order to get to the development team and share their Dapr knowledge. The game has an educational element because after a level is completed some Dapr information is shared with the player. The game was very popular at the conference.</p>
+
+    <div style="background: var(--paper); border: 2.5px solid var(--ink); border-radius: 4px; box-shadow: 6px 6px 0 var(--ink); padding: 1rem; margin: 1.5rem 0;">
+      <iframe frameborder="0" src="https://itch.io/embed/2163754" width="552" height="167"><a href="https://marcduiker.itch.io/dapr-game">The Dapr Game by marcduiker</a></iframe>
     </div>
   </section>
 
@@ -592,9 +631,9 @@
 <!-- ===================== GENERATIVE ART PAGE ===================== -->
 <div id="page-generative-art" style="display:none">
   <div class="iso-nav">
-    <a class="logo" href="#" data-view="home"><img src="src/assets/images/main/marcduiker_name_anim.gif" alt="Marc Duiker"></a>
+    <a class="logo" href="#" data-view="home">Marc Duiker<span class="dot">.</span></a>
     <nav>
-      <a href="#" data-view="articles">Articles</a><a href="#" class="active" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
+      <a href="#" data-view="article">Articles</a><a href="#" class="active" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" data-view="about">About</a>
     </nav>
   </div>
 
@@ -606,14 +645,16 @@
 
   <section class="page-section">
     <h2>Happy accidents</h2>
-    <p>I really love creative coding. It feels quite different compared to coding for work. When I code for work, I do it to achieve a very specific goal. With creative coding, the goal is to create something fun or beautiful, where the result is often achieved by happy accidents.</p>
+    <p>I really love creative coding. It feels quite different compared to coding for work. When I code for work, I do it to achieve a very specific goal; to implement a feature that adds value, or to demonstrate how a technology works. With creative coding, the goal is to create something fun or beautiful, where the result is often achieved by happy accidents.</p>
 
-    <p>If you're interested in learning creative coding, I recommend <a href="https://www.youtube.com/c/TheCodingTrain">The Coding Train</a> channel on YouTube.</p>
+    <p>If you're interested in learning (visual) creative coding, I can definitely recommend <a href="https://www.youtube.com/c/TheCodingTrain">The Coding Train</a> channel on YouTube. Daniel Shiffman is an amazing teacher, I want to be like him when I grow up.</p>
+
+    <p>Creative coding is also ideal for educational purposes. It's very rewarding for students to see (or hear) the result of their coding exercises.</p>
   </section>
 
   <section class="page-section">
     <h2>Generative art</h2>
-    <p>I create hand-crafted generative art under the pseudonym of <a href="https://www.fxhash.xyz/u/_md">_md</a>. I mostly use JavaScript with <a href="https://p5js.org/">P5js</a>.</p>
+    <p>I create hand-crafted generative art under the pseudonym of <a href="https://www.fxhash.xyz/u/_md">_md</a>. I mostly use JavaScript with <a href="https://p5js.org/">P5js</a>, a library for creative coding based on Processing.</p>
 
     <p>You can collect my digital art on <a href="https://www.fxhash.xyz/u/_md">fx(hash)</a>.</p>
 
@@ -640,7 +681,7 @@
     </div>
 
     <h3>Dynamic Sol LeWitt</h3>
-    <p>This is an interactive sketch, click around the center of the sketch.</p>
+    <p>This is an interactive sketch, click around the center of the sketch and the drawing will remain in place. Move away from the center and the drawing will move in that direction. Nodes will disappear when they are close to the edge.</p>
     <div style="background: var(--paper); border: 2.5px solid var(--ink); border-radius: 4px; box-shadow: 6px 6px 0 var(--ink); padding: 1rem; margin: 1.5rem 0;">
       <iframe src="https://openprocessing.org/sketch/1431396/embed/" width="500" height="500"></iframe>
     </div>
@@ -663,9 +704,9 @@
 <!-- ===================== ABOUT PAGE ===================== -->
 <div id="page-about" style="display:none">
   <div class="iso-nav">
-    <a class="logo" href="#" data-view="home"><img src="src/assets/images/main/marcduiker_name_anim.gif" alt="Marc Duiker"></a>
+    <a class="logo" href="#" data-view="home">Marc Duiker<span class="dot">.</span></a>
     <nav>
-      <a href="#" data-view="articles">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" class="active" data-view="about">About</a>
+      <a href="#" data-view="article">Articles</a><a href="#" data-view="generative-art">Generative Art</a><a href="#" data-view="pixel-art">Pixel Art</a><a href="#" class="active" data-view="about">About</a>
     </nav>
   </div>
 
@@ -677,9 +718,9 @@
 
   <section class="page-section">
     <p>Professionally I work as a Sr Developer Advocate at <a href="https://diagrid.io">Diagrid</a>, where I focus on improving the developer experience for the <a href="https://dapr.io">Dapr OSS project</a>.</p>
-    <p>I've been active in developer communities since 2012. I have a long history with .NET, Azure, serverless, and event-driven architectures. Over the last decade, I've been a co-organizer, MC, or speaker at many conferences across Europe.</p>
+    <p>I've been active in developer communities since 2012. I have a long history with .NET, Azure, serverless, and event-driven architectures. Over the last decade, I've been a co-organizer, MC, or speaker at many conferences across Europe. See my <a href="https://sessionize.com/marcduiker#sessions">Sessionize profile</a> for a list of sessions I can give at your event. For the last two years I've been creating content about Dapr, the Distributed Application Runtime, and leading the community management activities for the project.</p>
     <p>My creative side has many facets. I enjoy hand-coding visual and interactive experiences with JavaScript, drawing pixel art, and creating soundscapes with my modular synth.</p>
-    <p>If you want to be more involved in developer communities and don't know where to start, feel free to reach out to me.</p>
+    <p>If you want to be more involved in developer communities and don't know where to start, feel free to reach out to me. You can also ping me if you want to submit a session to a conference and would like to have your CfP or presentation reviewed.</p>
   </section>
 
   <section class="page-section">
@@ -698,7 +739,6 @@
 <!-- review controls -->
 <div class="ctl viewswitch">
   <button type="button" data-view="home" aria-pressed="true">⌂ Home</button>
-  <button type="button" data-view="articles" aria-pressed="false">📝 Articles</button>
   <button type="button" data-view="article" aria-pressed="false">✎ Article</button>
   <button type="button" data-view="pixel-art" aria-pressed="false">🎨 Pixel Art</button>
   <button type="button" data-view="generative-art" aria-pressed="false">🎭 Gen Art</button>
@@ -727,30 +767,6 @@ const genArt = [
   { name: "Complementary opposites", link: "https://www.fxhash.xyz/generative/31273" },
   { name: "Entangled lives", link: "https://www.fxhash.xyz/generative/31125" },
   { name: "Keep the machine running", link: "https://www.fxhash.xyz/generative/31053" }
-];
-
-const articles = [
-  { num: "001", title: "What is publiccode.yml?", date: "2026.06.24", category: "OSS", description: "Exploring the publiccode.yml standard that helps public administrations make their software discoverable and reusable." },
-  { num: "002", title: "Getting Started with Codeberg", date: "2026.06.10", category: "OSS", description: "A practical guide to registering on Codeberg.org and mirroring an existing GitHub repository." },
-  { num: "003", title: "Speaking at DevSum 2026", date: "2026.05.28", category: "Talk", description: "Recap of DevSum 2026 in Stockholm, comparing open-source workflow-as-code platforms." },
-  { num: "004", title: "Speaking at Update Conference Krakow 2026", date: "2026.05.15", category: "Talk", description: "My experiences and key takeaways from Update Conference in Krakow." },
-  { num: "005", title: "Speaking at Techorama Belgium 2026", date: "2026.05.02", category: "Talk", description: "Session recap and community connections from Techorama Belgium." },
-  { num: "006", title: "Managing the Dapr Kiosk at KubeCon EU 2026", date: "2026.04.20", category: "Dapr", description: "Behind the scenes of running the Dapr project kiosk at KubeCon Europe." },
-  { num: "007", title: "Speaking at FutureTech 2026", date: "2026.03.11", category: "Talk", description: "Future technology trends and my presentation on distributed applications." },
-  { num: "008", title: "Speaking at ContainerDays London 2026", date: "2026.02.11", category: "Talk", description: "Container orchestration and cloud-native development insights." },
-  { num: "009", title: "Speaking at NDC London 2026", date: "2026.01.30", category: "Talk", description: "Developer experience and community building at NDC London." },
-  { num: "010", title: "Speaking at HeapCon 2025", date: "2025.10.31", category: "Talk", description: "Memory management and performance optimization techniques." },
-  { num: "011", title: "Giving a Workshop at PyData AMS 2025", date: "2025.09.24", category: "Workshop", description: "Hands-on Python data science workshop for the Amsterdam community." },
-  { num: "012", title: "Speaking at NDC Copenhagen 2025", date: "2025.09.12", category: "Talk", description: "Nordic developer conference experiences and lessons learned." },
-  { num: "013", title: "Supercharge Your Presentations with Demo Time", date: "2025.08.05", category: "Guide", description: "Practical tips for creating engaging technical demonstrations." },
-  { num: "014", title: "Dapr Agents Workshop - PyLadies", date: "2025.05.27", category: "Workshop", description: "Introduction to Dapr for Python developers with PyLadies Amsterdam." },
-  { num: "015", title: "Speaking at KubeCon Europe 2025", date: "2025.04.04", category: "Talk", description: "Cloud-native development and Kubernetes insights from KubeCon." },
-  { num: "016", title: "Speaking at FutureTech 2025", date: "2025.03.13", category: "Talk", description: "Emerging technologies and their impact on software development." },
-  { num: "017", title: "Speaking at BitBash 2025", date: "2025.01.25", category: "Talk", description: "Open source contributions and community engagement strategies." },
-  { num: "018", title: "Speaking at .NET AMS 2025", date: "2025.01.08", category: "Talk", description: "dotNET community updates and best practices for developers." },
-  { num: "019", title: "Azure Functions University - HTTP Lesson", date: "2022.01.03", category: "Azure", description: "Comprehensive guide to HTTP triggers in Azure Functions." },
-  { num: "020", title: "Speaker Buddy", date: "2022.11.24", category: "Guide", description: "How to be an effective speaker buddy and support fellow presenters." },
-  { num: "021", title: "One Year at Ably as Developer Advocate", date: "2022.11.02", category: "Career", description: "Reflections on my first year as a Developer Advocate at Ably." }
 ];
 
 const platforms = {
@@ -786,6 +802,7 @@ function genSVG(i){
   return `<svg viewBox="0 0 240 180" preserveAspectRatio="xMidYMid slice">${sets[i % sets.length]}</svg>`;
 }
 
+// Platform icons - simple SVG representations
 function platformIcon(name) {
   const icons = {
     bluesky: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>`,
@@ -850,20 +867,7 @@ genArt.forEach((art, i) => {
   genGallery.appendChild(card);
 });
 
-const articlesList = document.getElementById('articles-list');
-articles.forEach((art, i) => {
-  const card = document.createElement('a');
-  card.className = 'card';
-  card.href = '#';
-  card.dataset.view = 'article';
-  card.innerHTML = `
-    <h3>${art.title}</h3>
-    <p class="desc">${art.description}</p>
-    <span class="m">${art.date} · <b>${art.category}</b></span>
-  `;
-  articlesList.appendChild(card);
-});
-
+// About page platforms list
 const platformsList = document.getElementById('platforms-list');
 Object.entries(platforms).forEach(([key, data]) => {
   const a = document.createElement('a');
@@ -982,7 +986,6 @@ window.addEventListener('resize', resize);
 document.addEventListener('visibilitychange', ()=>{ if(document.hidden) stop(); else start(); });
 
 const home = document.getElementById('page-home');
-const articlesPage = document.getElementById('page-articles');
 const articlePage = document.getElementById('page-article');
 const pixelArtPage = document.getElementById('page-pixel-art');
 const genArtPage = document.getElementById('page-generative-art');
@@ -991,7 +994,6 @@ const viewBtns = [...document.querySelectorAll('.viewswitch button')];
 
 function setView(v){
   home.style.display = (v==='home') ? '' : 'none';
-  articlesPage.style.display = (v==='articles') ? '' : 'none';
   articlePage.style.display = (v==='article') ? '' : 'none';
   pixelArtPage.style.display = (v==='pixel-art') ? '' : 'none';
   genArtPage.style.display = (v==='generative-art') ? '' : 'none';
