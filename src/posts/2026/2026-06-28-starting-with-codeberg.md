@@ -7,7 +7,7 @@ draft: true
 
 # Getting Started with Codeberg
 
-**TLDR:** Do you also want to reduce your dependency on non-EU-based tech platforms? Start with a free and open source Git provider! Sign up for Codeberg, create a new empty repo and push your code from an existing GitHub clone to it.
+**TLDR:** Do you also want to reduce your dependency on non-EU-based tech platforms? Start with a free and open source Git provider! Sign up for Codeberg, create a new empty repo and push your code from an existing GitHub clone to mirror it.
 
 ## Introduction
 
@@ -15,7 +15,7 @@ There is a lot of concerning stuff happening in the world (geopolitics, AI hype)
 
 ## Codeberg
 
-[Codeberg]((https://codeberg.org)) is a free, community-driven, non-profit Git hosting platform baed in Berlin Germany. The platform is powered by [Forgejo](https://forgejo.org), a self-hosted Git platform. If you're looking for a privacy-focused, European-based alternative to GitHub with no tracking, it makes a great second home, or new home, for your code. This post walks through registration, setting up your profile, creating a repository, and pushing a full GitHub repo across, history and all. 
+[Codeberg](https://codeberg.org) is a free, community-driven, non-profit Git hosting platform baed in Berlin Germany. The platform is powered by [Forgejo](https://forgejo.org), a self-hosted Git platform. If you're looking for a privacy-focused, European-based alternative to GitHub, it makes a great second home, or new home, for your code. This post walks through registration, setting up your profile, creating a repository, and pushing a full GitHub repo across, history and all.
 
 > **Scope:** This post is about copying your *code and full Git history* to Codeberg. It does **not** move issues, pull requests, labels, milestones, or releases — those live on GitHub's side and aren't part of the Git repository. If you want to bring those across too, you'll need a full migration via [codeberg.org/repo/migrate](https://codeberg.org/repo/migrate), which is outside the scope of this post.
 
@@ -39,7 +39,7 @@ When 2FA is enabled, you can no longer use your account password for Git operati
 
 ## 4. Creating an Empty Repository
 
-Click **+ → New Repository** and choose a name (matching your GitHub repo makes sense), a description, and a visibility setting. Crucially, **leave it empty** — do not initialize it with a README, license, or `.gitignore`. An empty repository avoids conflicts when you push your existing history into it. Once created, note the HTTPS clone URL, which looks like `https://codeberg.org/<username>/<repo>.git`. For my website it is `https://codeberg.org/marcduiker/marcduiker-dev.git`.
+In the Codeberg web UI, click **+ → New Repository** and choose a name (matching your GitHub repo makes sense), a description, and a visibility setting. Crucially, **leave it empty** — do not initialize it with a README, license, or `.gitignore`. An empty repository avoids conflicts when you push your existing history into it. Once created, note the HTTPS clone URL, which looks like `https://codeberg.org/<username>/<repo>.git`. For my website it is `https://codeberg.org/marcduiker/marcduiker-dev.git`.
 
 ## 5. Pushing Your Branches and Tags to Codeberg
 
@@ -68,7 +68,7 @@ cd marcduiker-dev.git
 git push --mirror https://codeberg.org/marcduiker/marcduiker-dev.git
 ```
 
-With this done, skip ahead to the credential note below; you can ignore the "second remote" and "push all branches" steps, since `--mirror` already pushed everything.
+With this done, skip ahead to the [Git credentials section](#git-credentials); you can ignore the "second remote" and "push all branches" steps, since `--mirror` already pushed everything.
 
 ### Option B: Push from your existing clone
 
@@ -147,6 +147,13 @@ When the push finishes, open the repository on Codeberg and confirm that all bra
 Codeberg has *disabled* the automatic pull-mirror feature, so it can't sync from GitHub on a schedule. They explain why in their blog post [Mirror repos: easily created, consuming resources forever](https://blog.codeberg.org/mirror-repos-easily-created-consuming-resources-forever.html).
 That means syncing is a manual push from your side. How you do it depends on which option you used in step 5.
 
+**If you used Option A (a fresh mirror clone)**, fetch the latest from GitHub and mirror-push it on — `--mirror` automatically includes any new branches and tags, so there's no loop to re-run:
+
+```bash
+git fetch -p origin
+git push --mirror https://codeberg.org/<username>/<repo>.git
+```
+
 **If you used Option B (your existing clone)**, fetch the latest from GitHub and push it on to Codeberg:
 
 ```bash
@@ -156,13 +163,6 @@ git push codeberg --tags
 ```
 
 If new branches were created on GitHub since your initial push, re-run the branch-creation loop from step 5 first so they exist locally and get picked up by `git push codeberg --all`.
-
-**If you used Option A (a fresh mirror clone)**, keep that bare `<repo>.git` directory around instead of deleting it. To sync, fetch the latest from GitHub and mirror-push it on — `--mirror` automatically includes any new branches and tags, so there's no loop to re-run:
-
-```bash
-git fetch -p origin
-git push --mirror https://codeberg.org/<username>/<repo>.git
-```
 
 To automate either approach, wrap the commands in a small script run via cron, or set up a scheduled GitHub Action that pushes to Codeberg.
 
