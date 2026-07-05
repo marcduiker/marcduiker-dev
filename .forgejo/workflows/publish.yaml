@@ -1,0 +1,37 @@
+name: Preview Publish
+on:
+  pull_request:
+jobs:
+  publish:
+    runs-on: codeberg-small
+    steps:
+      - uses: actions/checkout@v5
+#      - run: |
+#          # Use your favorite static site generator here!
+#          mkdir _site
+#          cp *.html _site/
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Persist npm cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+
+      - name: Persist Eleventy .cache
+        uses: actions/cache@v4
+        with:
+          path: ./.cache
+          key: ${{ runner.os }}-eleventy-fetch-cache
+      - run: npm install --os=linux --cpu=x64 sharp
+      - run: npm install
+      - run: npm run build
+      - if: ${{ forge.event_name == 'pull_request' }}
+        uses: actions/git-pages@v2
+        with:
+          site: https://${{ forge.event.repository.owner.username }}.preview.codeberg.page/${{ forge.event.repository.name }}@${{ forge.event.number }}/
+          token: ${{ forge.token }}
+          source: ./dist
