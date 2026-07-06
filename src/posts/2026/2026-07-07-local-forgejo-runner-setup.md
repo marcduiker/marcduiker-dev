@@ -73,8 +73,6 @@ services:
     privileged: true
     command: ['dockerd', '-H', 'tcp://0.0.0.0:2375', '--tls=false']
     restart: 'unless-stopped'
-    networks:
-      - runner-network
 
   runner:
     image: 'data.forgejo.org/forgejo/runner:12'
@@ -91,12 +89,6 @@ services:
       - ./data:/data
     restart: 'unless-stopped'
     command: 'forgejo-runner daemon --config /data/runner-config.yml'
-    networks:
-      - runner-network
-
-networks:
-  runner-network:
-    driver: bridge
 ```
 
 **What this does:**
@@ -299,16 +291,24 @@ Set-Location -Path "$HOME\forgejo-runner"
 docker compose logs -f runner
 ```
 
-Look for success messages like:
+
+You'll first see some logs entries that the docker deamon can't be pinged:
+
 ```
-INFO  Registered runner 'local-docker-runner' with Forgejo
-INFO  Runner is ready to accept jobs
+forgejo-runner  | Error: cannot ping the docker daemon
+```
+
+Soon after that you'll see the following logs indicating successful registration:
+
+```
+forgejo-runner  | time="2026-07-06T21:27:31Z"  level=info msg="runner: marcduiker-website-runner, with version: v12.12.0, with labels: [marcduiker-medium ubuntu-latest], ephemeral: false, declared successfully"
+forgejo-runner  | time="2026-07-06T21:27:31Z" level=info msg="[poller] launched"
 ```
 
 ### Verify on Codeberg
 
 1. Go to: `https://codeberg.org/marcduiker/marcduiker-dev/settings/actions/runners`
-2. Your runner should appear in the list with a status of **"Online"** ✅
+2. Your runner should appear in the list with a status of **`Idle`** 
 
 ---
 
