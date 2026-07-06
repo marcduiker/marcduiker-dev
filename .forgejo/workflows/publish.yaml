@@ -3,7 +3,7 @@ on:
   pull_request:
 jobs:
   publish:
-    runs-on: codeberg-small
+    runs-on: marcduiker-medium
     steps:
       - uses: actions/checkout@v5
 #      - run: |

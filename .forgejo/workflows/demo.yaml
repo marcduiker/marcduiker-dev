@@ -3,6 +3,6 @@ on:
   push:
 jobs:
   test:
-    runs-on: marcduiker-website-runner
+    runs-on: marcduiker-medium
     steps:
       - run: echo All good!
