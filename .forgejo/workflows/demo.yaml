@@ -1,0 +1,6 @@
+on: [push]
+jobs:
+  test:
+    runs-on: marcduiker-website-runner
+    steps:
+      - run: echo All good!
