@@ -5,7 +5,7 @@
   --wrapper-width: 64rem;
 }
 
-.prose :where(pre, pre + *, figure, figure + *) {
+.prose :where(pre, pre + *, .code-block, .code-block + *, figure, figure + *) {
   --flow-space: var(--space-m-l);
 }
 
