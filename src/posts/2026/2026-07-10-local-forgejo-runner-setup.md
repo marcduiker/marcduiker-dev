@@ -1,8 +1,7 @@
 ---
 title: "Setting up a local Forgejo runner for Codeberg"
-description: ""
-date: 2026-07-07
-draft: true
+description: "Complete step-by-step instructions to set up a local Forgejo Runner using Docker and connect it to your Codeberg repository."
+date: 2026-07-10
 ---
 
 **TLDR:** Complete step-by-step instructions to set up a local Forgejo Runner using Docker and connect it to your Codeberg repository.
@@ -71,7 +70,7 @@ Create a dedicated directory for your local Forgejo Runner. I suggest creating a
 
 Create the `forgejo-runner` directory and move into it:
 
-**macOS / Linux**
+*macOS / Linux*
 
 ```bash
 mkdir -p ~/forgejo-runner/data/.cache
@@ -85,7 +84,7 @@ The specific permissions (775 + g+s) ensure:
 - Files created by the runner maintain consistent group ownership
 - Multiple processes/users can share the cache directory without permission issues
 
-**Windows (PowerShell)**
+*Windows (PowerShell)*
 
 ```powershell
 # Create the directory structure
@@ -139,14 +138,14 @@ Ensure the terminal is in the `forgejo-runner` home directory you created in Ste
 
 Generate the default configuration file for the runner:
 
-**macOS / Linux**
+*macOS / Linux*
 
 ```bash
 docker run --rm data.forgejo.org/forgejo/runner:12 \
   forgejo-runner generate-config > data/runner-config.yml
 ```
 
-**Windows (PowerShell)**
+*Windows (PowerShell)*
 
 ```powershell
 docker run --rm data.forgejo.org/forgejo/runner:12 forgejo-runner generate-config | Out-File -FilePath "data\runner-config.yml" -Encoding UTF8
@@ -312,10 +311,7 @@ forgejo-runner  | time="2026-07-06T21:27:31Z" level=info msg="[poller] launched"
 1. Go to: `https://codeberg.org/<username>/<repository>/settings/actions/runners`
 
     In my case, this is:
-
-    ```
     `https://codeberg.org/marcduiker/marcduiker-dev/settings/actions/runners`
-    ```
 
 2. The runner should appear in the list with a status of **`Idle`** 
 
