@@ -1,0 +1,8 @@
+on: 
+  workflow_dispatch:
+  push:
+jobs:
+  test:
+    runs-on: marcduiker-medium
+    steps:
+      - run: echo All good!
