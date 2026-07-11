@@ -54,3 +54,102 @@ img[src*='dapr-community-supporter'] {
   max-inline-size: 100%;
   block-size: auto;
 }
+
+/* ---------------------------------------------------------------------------
+   Table of contents
+
+   Hidden on small screens. From the `md` breakpoint up, the TOC becomes a
+   sticky sidebar to the left of the article body.
+--------------------------------------------------------------------------- */
+
+/* Anchor jumps (and the scrollspy) land the heading below the sticky offset
+   instead of flush against the top of the viewport. */
+:where(.prose :is(h2, h3, h4)) {
+  scroll-margin-top: var(--space-l);
+}
+
+/* Hidden by default; revealed as a sidebar at the `md` breakpoint. */
+.post-toc {
+  display: none;
+}
+
+.post-toc-title {
+  font-weight: var(--font-bold);
+  font-size: var(--size-step-1);
+  color: var(--color-text);
+}
+
+.post-toc .toc {
+  font-size: var(--size-step-min-1);
+  line-height: var(--leading-fine);
+  margin-block-start: var(--space-s);
+}
+
+.post-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Indent nested (H3) entries without adding any vertical space, so the
+   rhythm between items stays even regardless of heading level. */
+.post-toc ul ul {
+  padding-inline-start: var(--space-s);
+  margin-top: var(--space-s);
+}
+
+.post-toc li {
+  margin: 0;
+}
+
+/* Uniform vertical gap between every entry. `li + li` covers consecutive
+   items (H2→H2, H3→H3, last H3→next H2); `ul ul > li:first-child` adds the
+   same gap above the first nested H3 so it isn't cramped against its H2. */
+.post-toc li + li,
+.post-toc ul ul > li:first-child {
+  margin-block-start: 0;
+}
+
+.post-toc a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text-accent);
+  padding-block: 0;
+  padding-inline-start: var(--space-xs);
+  border-inline-start: 2px solid var(--color-bg-accent-2);
+}
+
+.post-toc a:is(:hover, :focus) {
+  color: var(--color-text);
+  border-inline-start-color: var(--color-text-accent);
+}
+
+.post-toc a.is-active {
+  color: var(--color-text);
+  font-weight: var(--font-bold);
+  border-inline-start-color: var(--color-primary);
+}
+
+@media screen(md) {
+  /* TOC (source-first) takes the left column, body the right. Relying on
+     source order avoids grid's sparse auto-placement pushing the body down. */
+  .post-body-layout {
+    display: grid;
+    grid-template-columns: var(--toc-width, 15rem) minmax(0, 1fr);
+    gap: var(--space-l-xl);
+    align-items: start;
+  }
+
+  .post-content {
+    min-inline-size: 0;
+  }
+
+  .post-toc {
+    display: block;
+    position: sticky;
+    top: var(--space-l);
+    align-self: start;
+    max-block-size: calc(100vh - var(--space-xl));
+    overflow-y: auto;
+  }
+}

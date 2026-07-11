@@ -26,7 +26,18 @@ schema: blog
       {% endif %}
     </p>
 
-    {{ content | safe }}
+    {% set toc = content | toc %}
+    {% if toc %}
+      <div class="post-body-layout">
+        <aside class="post-toc">
+          <p class="post-toc-title" aria-hidden="true">On this page</p>
+          {{ toc | safe }}
+        </aside>
+        <div class="flow post-content">{{ content | safe }}</div>
+      </div>
+    {% else %}
+      {{ content | safe }}
+    {% endif %}
     {% include 'partials/edit-on.njk' %}
   </div>
 
@@ -49,4 +60,5 @@ schema: blog
 
 {%- js "defer" -%}
   {%- include 'scripts/copy-code.js' -%}
+  {%- include 'scripts/toc-scrollspy.js' -%}
 {%- endjs -%}

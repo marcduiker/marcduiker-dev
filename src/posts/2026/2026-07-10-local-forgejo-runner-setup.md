@@ -32,7 +32,7 @@ As you can see, the run time limit for these hosted runners is very short, so if
 
 I've checked the GitHub Actions workflow duration for my personal website build & deployment, and that workflow takes about 10 minutes and 30 seconds to run, so I definitely have to set up a self-hosted Forgejo Runner.
 
-### Self-hosted Forgejo Runner
+### Set Up a Self-hosted Forgejo Runner
 
 There are two ways to set up a local [self-hosted Forgejo Runner](https://forgejo.org/docs/latest/admin/actions/): installing a binary or using a Docker container. Since I'm working with containers daily, I prefer to run the Forgejo Runner as a Docker container. The next steps will guide you through the process of setting up a local Forgejo Runner using Docker and connecting it to your Codeberg repository.
 
