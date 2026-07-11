@@ -26,7 +26,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcduiker/marcduiker-dev.git"
+    "url": "https://codeberg.org/marcduiker/marcduiker-dev.git"
   },
   "overrides": {
     "nanoid": "5.1.7"
