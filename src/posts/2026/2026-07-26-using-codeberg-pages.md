@@ -44,6 +44,7 @@ To set up Forgejo Actions for deploying your website to Codeberg Pages, follow t
 2. **Create a Workflow File**: Create a `.forgejo/workflows/publish.yaml` file in your repository with the following content:
 
 ```yaml
+{% raw %}
 name: Preview Publish
 on:
   pull_request:
@@ -81,6 +82,7 @@ jobs:
           site: https://${{ forge.event.repository.owner.username }}.preview.codeberg.page/${{ forge.event.repository.name }}@${{ forge.event.number }}/
           token: ${{ forge.token }}
           source: ./dist
+{% endraw %}
 ```
 
 3. **Explanation of the Workflow**:
