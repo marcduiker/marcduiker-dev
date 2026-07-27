@@ -31,6 +31,8 @@ jobs:
       - run: npm install --os=linux --cpu=x64 sharp
       - run: npm install
       - run: npm run build
+        env:
+          ELEVENTY_PATH_PREFIX: "/marcduiker-dev"
       - name: Publish to Codeberg Pages
         if: ${{ forge.ref == 'refs/heads/main' || forge.event_name == 'workflow_dispatch' || forge.event_name == 'push' }}
         uses: actions/git-pages@v2

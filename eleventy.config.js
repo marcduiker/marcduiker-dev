@@ -122,6 +122,7 @@ export default async function (eleventyConfig) {
   // --------------------- general config
   return {
     markdownTemplateEngine: 'njk',
+     pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "",
 
     dir: {
       output: 'dist',
