@@ -32,6 +32,7 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
+          URL: "https://marcduiker.dev"
           ELEVENTY_PATH_PREFIX: "/marcduiker-dev"
       - name: Publish to Codeberg Pages
         if: ${{ forge.ref == 'refs/heads/main' || forge.event_name == 'workflow_dispatch' || forge.event_name == 'push' }}
