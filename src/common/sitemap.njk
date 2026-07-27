@@ -14,8 +14,8 @@ excludeFromSitemap: true
         {% set lastmod = page.date %}
       {% endif %}
 
-      <url>
-        <loc>{{ meta.url }}{{ page.url }}</loc>
+       <url>
+         <loc>{{ meta.baseUrl }}{{ page.url }}</loc>
         <lastmod>{{ lastmod | toIsoString }}</lastmod>
         <changefreq>{{ page.data.changeFreq if page.data.changeFreq else "monthly" }}</changefreq>
     </url>

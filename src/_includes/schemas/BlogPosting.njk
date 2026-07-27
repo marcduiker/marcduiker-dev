@@ -1,31 +1,31 @@
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ meta.url }}{{ page.url }}"
-    },
-    "isPartOf": {
-      "@id": "{{ meta.url }}#website"
-    },
-    "@id": "{{ meta.url }}{{ page.url }}#article",
-    "url": "{{ meta.url }}{{ page.url }}",
-    "headline": "{{ title or meta.siteName }}",
-    "description": "{{ description or meta.siteDescription }}",
-    "image": "{{ meta.url }}{{ meta.opengraph_default }}",
-    "inLanguage": "{{ meta.locale }}",
-    "publisher": {
-      "@type": "{{ meta.siteType }}",
-      "name": "{{ meta.author.name }}",
-      "url": "{{ meta.url }}"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "{{ meta.author.name }}",
-      "url": "{{ meta.url }}"
-    },
-    "datePublished": "{{ date | toIsoString }}",
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ meta.baseUrl }}{{ page.url }}"
+      },
+      "isPartOf": {
+        "@id": "{{ meta.baseUrl }}#website"
+      },
+      "@id": "{{ meta.baseUrl }}{{ page.url }}#article",
+      "url": "{{ meta.baseUrl }}{{ page.url }}",
+      "headline": "{{ title or meta.siteName }}",
+      "description": "{{ description or meta.siteDescription }}",
+      "image": "{{ meta.baseUrl }}{{ meta.opengraph_default }}",
+      "inLanguage": "{{ meta.locale }}",
+      "publisher": {
+        "@type": "{{ meta.siteType }}",
+        "name": "{{ meta.author.name }}",
+        "url": "{{ meta.baseUrl }}"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "{{ meta.author.name }}",
+        "url": "{{ meta.baseUrl }}"
+      },
+      "datePublished": "{{ date | toIsoString }}",
     "dateModified": "{{ (lastUpdated or date) | toIsoString }}"
   }
 </script>

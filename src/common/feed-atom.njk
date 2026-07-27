@@ -4,27 +4,27 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ meta.lang or page.lang }}" xml:base="{{ meta.url }}/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ meta.lang or page.lang }}" xml:base="{{ meta.baseUrl }}/">
   <title>{{ meta.blog.name }}</title>
   <subtitle>{{ meta.blog.description }}</subtitle>
-  <link href="{{ permalink | htmlBaseUrl(meta.url) }}" rel="self" />
-  <link href="{{ meta.url | addPathPrefixToFullUrl }}" />
+  <link href="{{ permalink | htmlBaseUrl(meta.baseUrl) }}" rel="self" />
+  <link href="{{ meta.baseUrl }}" />
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ meta.url | addPathPrefixToFullUrl }}</id>
+  <id>{{ meta.baseUrl }}</id>
   <author>
     <name>{{ meta.author.name }}</name>
   </author>
 	{% set postslist = collections.posts %}
   {%- for post in postslist | reverse -%}
-  {%- set absolutePostUrl = post.url | absoluteUrl(meta.url) -%}
-    <entry>
-      <title>{{ post.data.title }}</title>
-      <link href="{{ absolutePostUrl }}" />
-      <updated>{{ post.date | dateToRfc3339 }}</updated>
-      <id>{{ absolutePostUrl }}</id>
-      <content type="html">
-				{{ post.content | renderTransforms(post.data.page, meta.url) }}
- 			</content>
-    </entry>
+    {%- set absolutePostUrl = post.url | absoluteUrl(meta.baseUrl) -%}
+     <entry>
+       <title>{{ post.data.title }}</title>
+       <link href="{{ absolutePostUrl }}" />
+       <updated>{{ post.date | dateToRfc3339 }}</updated>
+       <id>{{ absolutePostUrl }}</id>
+       <content type="html">
+        {{ post.content | renderTransforms(post.data.page, meta.baseUrl) }}
+       </content>
+     </entry>
   {%- endfor -%}
 </feed>

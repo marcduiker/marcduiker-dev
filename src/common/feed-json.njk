@@ -7,8 +7,8 @@ excludeFromSitemap: true
   "version": "https://jsonfeed.org/version/1.1",
   "title": "{{ meta.blog.name }}",
   "language": "{{ meta.lang or page.lang }}",
-  "home_page_url": "{{ meta.url | addPathPrefixToFullUrl }}",
-  "feed_url": "{{ permalink | htmlBaseUrl(meta.url) }}",
+  "home_page_url": "{{ meta.baseUrl }}",
+  "feed_url": "{{ permalink | htmlBaseUrl(meta.baseUrl) }}",
   "description": "{{ meta.blog.description }}",
   "authors": [
     {
@@ -18,7 +18,7 @@ excludeFromSitemap: true
   "items": [
 		{%- set postslist = collections.posts -%}
 		{%- for post in postslist | reverse -%}
-		{%- set absolutePostUrl = post.url | absoluteUrl(meta.url) -%}
+		{%- set absolutePostUrl = post.url | absoluteUrl(meta.baseUrl) -%}
     {
       "id": "{{ absolutePostUrl }}",
       "url": "{{ absolutePostUrl }}",

@@ -1,4 +1,8 @@
+// url: Canonical URL for SEO (always points to marcduiker.dev)
+// baseUrl: Full URL including path prefix (e.g., marcduiker.dev/marcduiker-dev for Codeberg Pages)
 export const url = process.env.URL || 'https://marcduiker.dev';
+export const pathPrefix = (process.env.ELEVENTY_PATH_PREFIX || '').replace(/^\/|\/$/g, '');
+export const baseUrl = pathPrefix ? `${url}/${pathPrefix}` : url;
 export const siteName = 'marcduiker.dev';
 export const siteDescription = 'I ❤️ OSS, Improving Developer Experience, Drawing Pixel Art, and Handcrafting Generative Art';
 export const siteType = 'Person'; // schema

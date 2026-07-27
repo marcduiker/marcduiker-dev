@@ -36,7 +36,7 @@
 {% endif %}
 
 <!-- Open Graph meta  -->
-<meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ meta.baseUrl }}{{ page.url }}" />
 {% if layout == 'post' %}
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="{{ date | toIsoString }}" />
@@ -55,9 +55,9 @@
 <meta
   property="og:image"
   content="{%- if layout == 'post' -%}
-    {{- meta.url -}}/assets/og-images/{{ title | slugify }}-preview.jpeg
+    {{- meta.baseUrl -}}/assets/og-images/{{ title | slugify }}-preview.jpeg
   {%- else -%}
-    {{- meta.url -}}{{- meta.opengraph_default -}}
+    {{- meta.baseUrl -}}{{- meta.opengraph_default -}}
   {%- endif -%}"
 />
 <meta
