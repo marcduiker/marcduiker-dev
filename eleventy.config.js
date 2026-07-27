@@ -99,12 +99,12 @@ export default async function (eleventyConfig) {
     eleventyConfig.on('eleventy.after', events.svgToJpeg);
   }
 
-  // --------------------- Passthrough File Copy
+// --------------------- Passthrough File Copy
 
-  // -- same path
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
-    eleventyConfig.addPassthroughCopy(path)
-  );
+   // -- same path
+   ['src/assets/fonts/', 'src/assets/images/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
+     eleventyConfig.addPassthroughCopy(path)
+   );
 
   eleventyConfig.addPassthroughCopy({
     // -- to root
