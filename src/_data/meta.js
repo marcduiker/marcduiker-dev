@@ -1,8 +1,13 @@
 // url: Canonical URL for SEO (always points to marcduiker.dev)
-// baseUrl: Full URL including path prefix (e.g., marcduiker.dev/marcduiker-dev for Codeberg Pages)
+// siteHost: Origin that actually serves this build. Defaults to url, but a
+//   deployment served under a path prefix usually lives on a different origin
+//   (Codeberg Pages serves marcduiker.codeberg.page/marcduiker-dev, NOT
+//   marcduiker.dev/marcduiker-dev), so set SITE_HOST there.
+// baseUrl: siteHost plus the path prefix, i.e. where this build is reachable.
 export const url = process.env.URL || 'https://marcduiker.dev';
 export const pathPrefix = (process.env.ELEVENTY_PATH_PREFIX || '').replace(/^\/|\/$/g, '');
-export const baseUrl = pathPrefix ? `${url}/${pathPrefix}` : url;
+export const siteHost = (process.env.SITE_HOST || url).replace(/\/$/, '');
+export const baseUrl = pathPrefix ? `${siteHost}/${pathPrefix}` : siteHost;
 export const siteName = 'marcduiker.dev';
 export const siteDescription = 'I ❤️ OSS, Improving Developer Experience, Drawing Pixel Art, and Handcrafting Generative Art';
 export const siteType = 'Person'; // schema

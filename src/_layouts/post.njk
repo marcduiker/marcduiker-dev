@@ -45,7 +45,11 @@ schema: blog
   <div hidden class="h-entry">
     <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.baseUrl) }}">{{ title }}</a>
     <a class="p-name u-url" rel="author" href="{{ meta.baseUrl }}">{{ meta.author.name }}</a>
+    <!-- eleventy:ignore keeps this out of the image transform: it is hidden
+         microformats markup, and an absolute src would otherwise be fetched
+         over the network from the live site on every build. -->
     <img
+      eleventy:ignore
       class="u-author h-card"
       src="{{ meta.author.avatar | url | absoluteUrl(meta.baseUrl) }}"
       alt="{{ meta.author.name }}"

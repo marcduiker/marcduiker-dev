@@ -28,8 +28,11 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
+          # URL is the canonical origin for SEO; SITE_HOST is where this build
+          # is actually served, which is Codeberg Pages, not marcduiker.dev.
           URL: "https://marcduiker.dev"
-          ELEVENTY_PATH_PREFIX: "/marcduiker-dev"
+          SITE_HOST: "https://${{ forge.event.repository.owner.username }}.codeberg.page"
+          ELEVENTY_PATH_PREFIX: "/${{ forge.event.repository.name }}"
       - name: Publish to Codeberg Pages
         if: ${{ forge.ref == 'refs/heads/main' || forge.event_name == 'workflow_dispatch' || forge.event_name == 'push' }}
         uses: actions/git-pages@v2
