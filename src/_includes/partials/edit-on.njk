@@ -2,7 +2,12 @@
   <hr />
   <p class="text-step-min-1">
     {{ meta[page.lang].blog.githubEdit }}
-    <a href="{{ pkg.repository.url | url | replace('.git', (pkg.repository.url contains 'codeberg.org' ? '/src/branch/main/' : '/tree/main/')) }}{{ page.inputPath }}"
+    {% if 'codeberg.org' in pkg.repository.url %}
+      {% set repoPath = pkg.repository.url | url | replace('.git', '/src/branch/main/') %}
+    {% else %}
+      {% set repoPath = pkg.repository.url | url | replace('.git', '/tree/main/') %}
+    {% endif %}
+    <a href="{{ repoPath }}{{ page.inputPath | replace('./', '', 1) }}"
       >{{ meta.viewRepo.infoText }}</a
     >.
   </p>
